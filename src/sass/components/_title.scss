@@ -1,0 +1,22 @@
+.title {
+  font-family: 'Titan One', sans-serif;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.147;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--accent-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.1458;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    line-height: 1.1379;
+    letter-spacing: 0.06em;
+  }
+}
