@@ -1,3 +1,11 @@
+// .about .container {
+//     background-image: url(../images/about/milk-bgi320.png);
+
+//     background-repeat: no-repeat;
+//     background-position: 30%;
+//     background-size: contain;
+// }
+
 .about {
     padding-bottom: 20px;
     padding-top: 60px;
@@ -11,6 +19,7 @@
         @media screen and (max-width:767px) {
             width: 220px;
         }
+        
     }
 
     &__text {
@@ -62,21 +71,30 @@
         //     height: 501px;
         // }
     }
+
+    &__button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        font-size: 14px;
+        line-height: 1.29;
+    }
 }
 
 .about__mb-small {
     margin-bottom: 15px;
-    // @media screen and (min-width:768px) {
-    //    margin-bottom: 16px; 
-    // }
+    @media screen and (min-width:768px) {
+       margin-bottom: 16px; 
+    }
 }
 
 .about__mb-big {
     margin-bottom: 32px;
-    // @media screen and (min-width:768px) {
-    //     margin-bottom: 40px;
-    // }
-    // @media screen and (min-width:1200px) {
-    //     margin-bottom: 60px;
-    // }
+    @media screen and (min-width:768px) {
+        margin-bottom: 40px;
+    }
+    @media screen and (min-width:1200px) {
+        margin-bottom: 60px;
+    }
 }
