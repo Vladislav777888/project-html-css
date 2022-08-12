@@ -19,4 +19,24 @@
     line-height: 1.1379;
     letter-spacing: 0.06em;
   }
+
+  &--smaller {
+    display: block;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0;
+
+    color: var(--color-hero-elips-and-label-and-time);
+
+    @media screen and (min-width: 768px) {
+      font-size: 26px;
+      line-height: 1.15;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 30px;
+      line-height: 1.13;
+      letter-spacing: 0.04em;
+    }
+  }
 }
