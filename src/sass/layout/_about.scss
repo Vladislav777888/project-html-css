@@ -76,7 +76,11 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+    }
+}
 
+.button {
+    &__text {
         font-size: 14px;
         line-height: 1.29;
     }
