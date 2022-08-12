@@ -77,12 +77,9 @@
     border-radius: 50%;
     background-color: var(--bg-color-revues-point);
 }
-.slick-prev, .slick-next {
-    display: none;
-}
 
-.slick-dots li button {
-    
+.slick-dots li {
+ color: red;   
 }
 .slick-dots li.slick-active button:before {
     opacity: .75;
