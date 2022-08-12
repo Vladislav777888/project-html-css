@@ -1,21 +1,11 @@
 .about__holder {
-
-    // background-image: image-set(
-    //         url('../images/about/milk-bgi320@2x.webp') 2x type("image/webp"),
-    //         url('../images/about/milk-bgi320.webp') 1x type("image/webp"),
-    //         url('../images/about/milk-bgi320@2x.png') 2x type("image/png"),
-    //         url('../images/about/milk-bgi320.png') type("image/png")
-    // );
-
     @media screen and (max-width:767px) {
-        // background-image: url(../images/about/milk-bgi320.webp);
         background-image: url(../images/about/milk-bgi320.png);
         background-repeat: no-repeat;
         background-position-y: 30%;
         background-size: contain;
 
         @media (min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
-            // background-image: url(../images/about/milk-bgi320@2x.webp);
             background-image: url(../images/about/milk-bgi320@2x.png);
         }
     }
@@ -24,11 +14,20 @@
 .about {
     padding-bottom: 20px;
     padding-top: 60px;
-    // @media screen and (min-width:768px) {
-    //     padding-bottom: 30px;
-    // }
+    @media screen and (min-width:768px) {
+        padding-bottom: 30px;
+    }
 
     background-color: var(--secondary-background-color);
+    @media screen and (min-width:1200px) {
+        background-image: url(../images/about/milk-bgi1200.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        @media (min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
+            background-image: url(../images/about/milk-bgi1200@2x.png);
+        }
+    }
 
     &__container {
         @media screen and (max-width:767px) {
