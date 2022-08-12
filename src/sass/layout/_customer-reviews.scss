@@ -1,58 +1,89 @@
 
-body {
-    list-style: none;
-}
-p {
-    margin: 0;
+
+.customer-reviews {
+    background-color: antiquewhite;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.875;
+    text-align: center;
+    
 }
 .container {
     background-color: aquamarine;
-    padding: 20px;
-    margin: 15px;
+    // margin: 0 auto;
+    // padding-left: 15px;
+    // padding-right: 15px;
 }
 .customer-reviews__head {
     display: none;
 }
-.customer-reviews__list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+// .customer-reviews__list {
+//     @extend %flex-centered;
+// }
 .customer-reviews__photo {
     border-radius: 50%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
-.customer-reviews__item {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
+// .customer-reviews__item {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: center;
+//     align-items: center;
+// }
 .customer-reviews__text {
     margin-top: 16px;
-    margin-bottom: 36px;
+    margin-bottom: 16px;
     padding: 47px 109px 39px 109px;
-    background-color: rgba(250, 250, 250, 1);
+    background-color: var(--bg-color-revues);
     text-align: center;
 }
 .customer-reviews__contacts {
     text-align: center;
+    margin-top: 16px;
     margin-bottom: 32px;
+    // font-weight: 500;
+    font-size: 20px;
+    // line-height: 1.85;
 }
-.customer-reviews__contacts::before {
+.customer-reviews__dots {
     display: flex;
+    position: relative;
+    margin: auto;
     content: "";
     width: 4px;
     height: 4px;
     border-radius: 50%;
-    background-color: tomato;
+    background-color: var(--bg-color-revues-point);
+}
+.customer-reviews__dots::before {
+    position: absolute;
+    display: flex;
+    left: 10px;
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: var(--bg-color-revues-point);
+}
+.customer-reviews__dots::after {
+    position: absolute;
+    display: flex;
+    right: 10px;
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: var(--bg-color-revues-point);
 }
 .slick-prev, .slick-next {
     display: none;
 }
 
+.slick-dots li button {
+    
+}
 .slick-dots li.slick-active button:before {
     opacity: .75;
     color:tomato;
@@ -60,3 +91,4 @@ p {
 // .slick-dots li button:before {
 //     color: green;
 // }
+
