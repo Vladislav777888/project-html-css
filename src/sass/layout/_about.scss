@@ -1,10 +1,25 @@
-// .about .container {
-//     background-image: url(../images/about/milk-bgi320.png);
+.about__holder {
 
-//     background-repeat: no-repeat;
-//     background-position: 30%;
-//     background-size: contain;
-// }
+    // background-image: image-set(
+    //         url('../images/about/milk-bgi320@2x.webp') 2x type("image/webp"),
+    //         url('../images/about/milk-bgi320.webp') 1x type("image/webp"),
+    //         url('../images/about/milk-bgi320@2x.png') 2x type("image/png"),
+    //         url('../images/about/milk-bgi320.png') type("image/png")
+    // );
+
+    @media screen and (max-width:767px) {
+        // background-image: url(../images/about/milk-bgi320.webp);
+        background-image: url(../images/about/milk-bgi320.png);
+        background-repeat: no-repeat;
+        background-position-y: 30%;
+        background-size: contain;
+
+        @media (min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
+            // background-image: url(../images/about/milk-bgi320@2x.webp);
+            background-image: url(../images/about/milk-bgi320@2x.png);
+        }
+    }
+}
 
 .about {
     padding-bottom: 20px;
@@ -19,7 +34,6 @@
         @media screen and (max-width:767px) {
             width: 220px;
         }
-        
     }
 
     &__text {
@@ -57,19 +71,7 @@
     &__image {
         @media screen and (max-width:767px) {
             margin-bottom: 40px;
-
-            width: 280px;
-            height: 279px;
         }
-
-        // @media screen and (min-width:768px) {
-        //     width: 333px;
-        //     height: 335px;
-        // }
-        // @media screen and (min-width:768px) {
-        //     width: 501px;
-        //     height: 501px;
-        // }
     }
 
     &__button {
@@ -81,8 +83,10 @@
 
 .button {
     &__text {
-        font-size: 14px;
-        line-height: 1.29;
+        @media screen and (min-width:768px) {
+            font-size: 14px;
+            line-height: 1.29;
+        }
     }
 }
 
