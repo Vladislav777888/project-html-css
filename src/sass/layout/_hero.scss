@@ -1,0 +1,61 @@
+.hero {
+    padding-top: 136px;
+    padding-bottom: 202px;
+    padding-left: 20px;
+
+    background-color: var(--hero-and-ice-cream-bg-color);
+
+    &__title {
+        width: 218px;
+
+        font-size: 26px;
+
+        text-align: left;
+
+        color: var(--text-color-white);
+
+        &--red-text {
+            font-size: 48px;
+
+            line-height: 0.965;
+
+            color: var(--accent-color);
+        }
+
+        &--margin-bottom {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__action-buttons {
+        display: flex;
+    }
+
+    &__button {
+        padding-left: 13px;
+        padding-right: 13px;
+
+        min-width: 62px;
+        min-height: 24px;
+
+        border-radius: 20px;
+
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 1.25;
+
+        &--product {
+            background-color: var(--accent-color);
+            
+            color: var(--text-color-white);
+
+            &:hover {
+                background-color: var(--footer-bg-color-button);
+            }
+        }
+
+        &--margin:not(:last-child) {
+            margin-right: 12px;
+        }
+    }
+}
