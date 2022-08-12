@@ -1,0 +1,82 @@
+.about {
+    padding-bottom: 20px;
+    padding-top: 60px;
+    // @media screen and (min-width:768px) {
+    //     padding-bottom: 30px;
+    // }
+
+    background-color: var(--secondary-background-color);
+
+    &__container {
+        @media screen and (max-width:767px) {
+            width: 220px;
+        }
+    }
+
+    &__text {
+        margin-bottom: 30px;
+
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.62;
+        letter-spacing: 0;
+
+        // @media screen and (min-width:768px) {
+            
+        // }
+        // @media screen and (min-width:1200px) {
+            
+        // }
+
+        &--lighter {
+            margin-bottom: 20px;
+
+            color: var(--secondary-text-color);
+
+            // @media screen and (min-width:768px) {
+            //     margin-bottom: 25px;
+            //     // margin-bottom: 40px;
+            //     // для последнего абзаца добавить
+                
+            // }
+            // @media screen and (min-width:1200px) {
+                
+            // }
+        }
+    }
+
+    &__image {
+        @media screen and (max-width:767px) {
+            margin-bottom: 40px;
+
+            width: 280px;
+            height: 279px;
+        }
+
+        // @media screen and (min-width:768px) {
+        //     width: 333px;
+        //     height: 335px;
+        // }
+        // @media screen and (min-width:768px) {
+        //     width: 501px;
+        //     height: 501px;
+        // }
+    }
+}
+
+.about__mb-small {
+    margin-bottom: 15px;
+    // @media screen and (min-width:768px) {
+    //    margin-bottom: 16px; 
+    // }
+}
+
+.about__mb-big {
+    margin-bottom: 32px;
+    // @media screen and (min-width:768px) {
+    //     margin-bottom: 40px;
+    // }
+    // @media screen and (min-width:1200px) {
+    //     margin-bottom: 60px;
+    // }
+}
