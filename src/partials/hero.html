@@ -1,13 +1,61 @@
 <section class="hero">
     <div class="container hero__container">
+        <!-- Мороженное -->
         <div class="hero__ice-cream-thump">
             <div class="hero__circle"></div>
-            <div class="hero__ice-cream"></div>
+            <picture class="hero__img hero__ice-cream">
+                <source srcset="./images/hero/ice1200@2x.webp 2x, ./images/hero/ice1200.webp 1x" media="(min-width: 1200px)" type="image/webp">
+                <source srcset="./images/hero/ice768@2x.webp 2x, ./images/hero/ice768.webp 1x" media="(min-width: 768px)" type="image/webp">
+                <source srcset="./images/hero/ice320@2x.webp 2x, ./images/hero/ice320.webp 1x" media="(max-width: 767px)" type="image/webp">
+                <source srcset="./images/hero/ice1200@2x.png 2x, ./images/hero/ice1200.png 1x" media="(min-width: 1200px)" type="image/png">
+                <source srcset="./images/hero/ice768@2x.png 2x, ./images/hero/ice768.png 1x" media="(min-width: 768px)" type="image/png">
+                <source srcset="./images/hero/ice320@2x.png 2x, ./images/hero/ice320.png 1x" media="(max-width: 767px)" type="image/png">
+                <img src="./images/hero/ice320.png" alt="Best ice cream" />
+            </picture>
         </div>
-        <h1 class="title hero__title hero__title--margin-bottom">Ice cream made with <span class="hero__title hero__title--red-text">passion</span></h1>
-        <div class="hero__action-buttons">
-            <button class="button hero__button hero__button--margin hero__button--product">Products</button>
-            <button class="button hero__button hero__button--margin">How it's made?</button>
+
+        <!-- Девушка -->
+        <picture class="hero__ice-baby">
+            <source srcset="./images/hero/girl1200@2x.webp 2x, ./images/hero/girl1200.webp 1x" media="(min-width: 1200px)" type="image/webp">
+            <source srcset="./images/hero/girl768@2x.webp 2x, ./images/hero/girl768.webp 1x" media="(min-width: 768px)" type="image/webp">
+            <source srcset="./images/hero/girl1200@2x.png 2x, ./images/hero/girl1200.png 1x" media="(min-width: 1200px)" type="image/png">
+            <source srcset="./images/hero/girl768@2x.png 2x, ./images/hero/girl768.png 1x" media="(min-width: 768px)" type="image/png">
+            <img src="./images/hero/girl768.png" alt="Best ingredients" />
+        </picture>
+
+        <!-- Заглавие страницы + блок кнопок -->
+        <div class="hero__accent hero__accent--margin">
+            <h1 class="title hero__title hero__title--margin-bottom">Ice cream made with <span class="hero__title hero__title--red-text">passion</span></h1>
+            <div class="hero__action-buttons">
+                <a href="#products" class="button hero__button hero__button--margin hero__button--product">Products</a>
+                <a href="#about" class="button hero__button hero__button--margin">How it's made?</a>
+            </div>
+        </div>
+
+        <!-- Молоко + блок текста -->
+        <div class="hero__advantages-thumb">
+            <picture class="hero__img hero__milk">
+                <source srcset="./images/hero/milk1200@2x.webp 2x, ./images/hero/milk1200.webp 1x" media="(min-width: 1200px)" type="image/webp">
+                <source srcset="./images/hero/milk768@2x.webp 2x, ./images/hero/milk768.webp 1x" media="(min-width: 768px)" type="image/webp">
+                <source srcset="./images/hero/milk1200@2x.png 2x, ./images/hero/milk1200.png 1x" media="(min-width: 1200px)" type="image/png">
+                <source srcset="./images/hero/milk768@2x.png 2x, ./images/hero/milk768.png 1x" media="(min-width: 768px)" type="image/png">
+                <img src="./images/hero/milk768.png" alt="Best ingredients" />
+            </picture>
+            <div class="hero__advantages">
+                <p class="hero__main-idea hero__main-idea--margin">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+            </div>
+        </div>
+
+        <!-- Счетчик магазинов -->
+        <div class="hero__outlet-thumb hero__outlet-thumb--cafe">
+            <div class="hero__circle hero__circle--small"></div>
+            <h2 class="title hero__outlet-amount hero__outlet-amount--margin">16</h2>
+            <p class="hero__outlet">cafes</p>
+        </div>
+        <div class="hero__outlet-thumb hero__outlet-thumb--truck">
+            <div class="hero__circle hero__circle--small hero__circle--small-on-trucks"></div>
+            <h2 class="title hero__outlet-amount hero__outlet-amount--margin">23</h2>
+            <p class="hero__outlet">food trucks</p>
         </div>
     </div>
 </section>
