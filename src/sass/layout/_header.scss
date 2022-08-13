@@ -47,9 +47,10 @@
       right: 224px;
     }
 
-    max-width: 20px;
-    height: 14px;
+    width: 40px;
+    height: 40px;
     background-color: var(--hero-and-ice-cream-bg-color);
+    color: var(--accent-color);
     border: none;
     cursor: pointer;
 
@@ -61,17 +62,24 @@
 
     &:hover,
     &:focus {
-      color: var(--accent-color);
+      color: var(--main-text-color);
     }
   }
 
   &__image {
-    max-width: 199px;
+    width: 199px;
   }
 
   &__logo {
+    cursor: pointer;
+
     @media screen and (min-width: 1200px) {
       margin-right: 128px;
+    }
+
+    &:focus {
+      animation: fadeInTopLeft;
+      animation-duration: 2s;
     }
   }
 }
@@ -116,10 +124,8 @@
   background-color: var(--mobile-menu-bg-color);
   z-index: 999;
 
-  // &.is-hidden {
-  // }
-
-  .page-header__open-menu:focus + & {
+  // .page-header__open-menu:focus + &,
+  .page-header__open-menu:focus-within + & {
     transform: translateX(0);
   }
 
@@ -133,18 +139,19 @@
     top: 20px;
     right: 20px;
 
-    max-width: 14px;
-    height: 14px;
+    width: 40px;
+    height: 40px;
     background-color: var(--mobile-menu-bg-color);
+    color: var(--text-color-white);
     border: none;
     cursor: pointer;
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    // transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
-      color: var(--accent-color);
+      color: var(--main-text-color);
     }
   }
 

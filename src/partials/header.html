@@ -1,13 +1,13 @@
 <header class="page-header">
   <div class="container page-header__inner">
     <!-- add logo -->
-    <a href="" class="logo page-header__logo">
+    <a href="" class="logo page-header__logo animate__animated">
       <picture>
         <source
           srcset="./images/header/logo.webp 2x, ./images/header/logo@2x.webp 1x"
           type="image/webp"
         />
-        <source srcset="./images/header/logo@2x.png 2x" type="image/jpg" />
+        <source srcset="./images/header/logo@2x.png 2x" type="image/png" />
         <img
           width="199"
           height="50"
@@ -63,23 +63,9 @@
       aria-controls="mobile-menu"
       data-mobile-menu-open
     >
-      <picture>
-        <source
-          srcset="
-            ./images/header/burger.webp    2x,
-            ./images/header/burger@2x.webp 1x
-          "
-          type="image/webp"
-        />
-        <source srcset="./images/header/burger@2x.png 2x" type="image/jpg" />
-        <img
-          width="20"
-          height="12"
-          class="page-header__image"
-          src="./images/header/burger.png"
-          alt="open-menu"
-        />
-      </picture>
+      <svg width="20" height="12" class="icon">
+        <use href="/src/images/sprite/icons.svg#icon-burger"></use>
+      </svg>
     </button>
 
     <!-- add mobile menu -->
@@ -89,23 +75,9 @@
         type="button"
         data-mobile-menu-close
       >
-        <picture>
-          <source
-            srcset="
-              ./images/header/close.webp    2x,
-              ./images/header/close@2x.webp 1x
-            "
-            type="image/webp"
-          />
-          <source srcset="./images/header/close@2x.png 2x" type="image/jpg" />
-          <img
-            width="14"
-            height="14"
-            class="page-header__image"
-            src="./images/header/close.png"
-            alt="close-menu"
-          />
-        </picture>
+        <svg width="14" height="14" class="icon">
+          <use href="/src/images/sprite/icons.svg#icon-close"></use>
+        </svg>
       </button>
       <button class="button mobile-menu__button" data-modal-open-mobile>
         Buy now
