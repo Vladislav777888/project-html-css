@@ -183,11 +183,18 @@
 }
 
 .qwe1 {
-    border: 2px solid tomato;
+    
     max-width: 450px;
     width: calc(100% - 40px);
     background-color: #fff;
     transform: translate(-50%, -50%) scale(1);
+    
+    &__chicago,
+    &__l-angeles,
+    &__n-york {
+        width: 100%;
+    }
+    
 }
 
 .qwe2 {
