@@ -186,17 +186,13 @@
     }
 }
 
-
-
-.qwe1 {
+.modal-one {
     height: calc(100% - 40px);;
     padding-top: 20px;
     max-width: 550px;
     width: calc(100% - 40px);
     background-color: #fff;
-    transform: translate(-50%, -50%) scale(1);
-    
-    
+    transform: translate(-50%, -50%) scale(1);   
 }
 
 
@@ -224,41 +220,57 @@
 
 .maps {
     height: 100%;
+
+    &__item {
+        text-align: center; 
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    &__town {
+        width: 100%;
+        height: 200px
+    }
 }
 
-.maps__item:not(:last-child) {
-    margin-bottom: 10px;
-}
-
-.maps__item {
- text-align: center;
- 
-   }
-
-.maps__chi {
- 
-   
-    width: 100%;
-height: 200px
-}
-.maps__la {
-    
-
-width: 100%;
-height: 200px
-}
-.maps__ny {
-       
-
-    width: 100%;
-    height: 200px
-}
-
-.qwe2 {
+.modal-two {
+    padding: 30px;
     height: 90%;
-    border: 2px solid rgb(34, 3, 136);
     max-width: 450px;
     width: calc(100% - 40px);
-    background-color: red;
+    background-color: white;
     transform: translate(-50%, -50%) scale(1);
+    text-align: center;
+    background-image: linear-gradient(to bottom,
+                #fff 33%,
+                #FFF5F6 40%);
+
+    &__title {
+        font-size: 18px;
+        color: var(--accent-color);
+        margin-bottom: 12px;
+    }
+
+    &__list {
+        display: inline-block;
+        
+    }
+
+    &__name:not(:last-child) {
+        margin-bottom: 10px;
+        
+        @media screen and (min-width: 768px) {
+            margin-bottom: 7px;
+        }
+        
+    }
+
+    &__name {
+        font-size: 14px;
+        @media screen and (min-width: 768px) {
+                font-size: 16px;
+            }
+        }
 }
