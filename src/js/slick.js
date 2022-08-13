@@ -4,7 +4,7 @@ $('.one-time').slick({
   speed: 500,
   slidesToShow: 1,
   adaptiveHeight: true,
-  autoplay: false,
+  autoplay: true,
   autoplaySpeed: 4000,
   arrows: false
 });
