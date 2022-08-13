@@ -46,6 +46,8 @@
     padding: 30px 50px 16px 50px;
     background-color: var(--bg-color-revues);
     text-align: center;
+    transform: scale(1.1);
+
 
     @media screen and (min-width:768px) {
         max-width: 620px;
@@ -57,6 +59,10 @@
     }
 }
 
+.customer-reviews__post:hover {
+    transition: transform .25s cubic-bezier(.4, 0, .2, 1);
+    box-shadow: 0 8px 30px #d414431a;
+}
     // .customer-reviews__arrow::before 
     .customer-reviews__text::before {
     display: inline-block;
