@@ -1,4 +1,4 @@
-<section class="section contacts">
+<section id="contacts" class="section contacts">
     <div class="container container-tablet">
         <h2 class="visually-hidden">Contacts</h2>
         <ul class="contact-cards">
@@ -91,57 +91,69 @@
             </li>
         </ul>
         <div class="contact-button">
-            <button class="button contact-button--alternative" type="button" data-modal-open1>Our Locations
-                <svg class="button__icon--white" width="6px" height="10px">
-                    <use href="./images/Sprite/icons.svg#icon-arrow-right_buttons"></use>
-                </svg>
-            </button>
-            <button class="button contact-button" type="button" data-modal-open2>Franchise
-                <svg class="button__icon--red" width="6px" height="10px">
-                    <use href="./images/Sprite/icons.svg#icon-arrow-right_buttons"></use>
-                </svg>
-            </button>
+            <ul class="contact-button__list">               
+                <li class="contact-button__item">
+                    <button class="button contact-button__alternative" type="button" data-modal-open1>Our Locations
+                        <svg class="contact-button__icon" width="6px" height="10px">
+                            <use href="./images/Sprite/icons.svg#icon-arrow-right_buttons-white"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li class="contact-button__item">
+                    <button class="button" type="button" data-modal-open2>Franchise
+                        <svg class="contact-button__icon" width="6px" height="10px">
+                            <use href="./images/Sprite/icons.svg#icon-arrow-right_buttons-red"></use>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
         </div>
     </div>
     <div class="backdrop is-hidden" data-modal1>
         <div class="qwe1 modal container">
-            <button data-modal-close1 type="button">
-                close
+            <button data-modal-close1 type="button" class="close-button">
+                <svg class="" width="11px" height="11px">
+                    <use href="./images/Sprite/icons.svg#close-button"></use>
+                </svg>
             </button>
-            <button type="button">
-                Chicago
-            </button>
-            <button type="button">
-                Los-Angeles
-            </button>
-            <button type="button">
-                New-York
-            </button>
-            <!-- <div>
-                <iframe class="qwe1__chicago"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d33637.291743509246!2d-87.81493024702762!3d41.82518355518465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e3426fe780311%3A0x2a8c41018f34d074!2sMHC!5e0!3m2!1suk!2sua!4v1660388095829!5m2!1suk!2sua"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="maps">
+                <ul class="maps__list">
+                    <li class="maps__item">
+                        <p>Chicago</p>
+                        <iframe class="maps__chi"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d33637.291743509246!2d-87.81493024702762!3d41.82518355518465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e3426fe780311%3A0x2a8c41018f34d074!2sMHC!5e0!3m2!1suk!2sua!4v1660388095829!5m2!1suk!2sua"
+                             style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </li>
+                    <li class="maps__item">
+                       <p>LosAngeles</p>
+                        <iframe class="maps__la"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89044.72901778901!2d-118.43440167550139!3d33.96312421168516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2z0JvQvtGBLdCQ0L3QtNC20LXQu9C10YEsINCa0LDQu9GW0YTQvtGA0L3RltGPLCDQodC_0L7Qu9GD0YfQtdC90ZYg0KjRgtCw0YLQuCDQkNC80LXRgNC40LrQuA!5e0!3m2!1suk!2sua!4v1660388273704!5m2!1suk!2sua"
+                             style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </li>
+                    <li class="maps__item">
+                        <p>NewYork</p>
+                        <iframe class="maps__ny"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d136880.69948156807!2d-74.09583136924113!3d40.70338137700003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2z0J3RjNGOLdCZ0L7RgNC6LCDQodC_0L7Qu9GD0YfQtdC90ZYg0KjRgtCw0YLQuCDQkNC80LXRgNC40LrQuA!5e0!3m2!1suk!2sua!4v1660388454788!5m2!1suk!2sua"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </li>
+                </ul>                  
+                </div>
             </div>
-            <div>
-                <iframe class="qwe1__l-angeles"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89044.72901778901!2d-118.43440167550139!3d33.96312421168516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2z0JvQvtGBLdCQ0L3QtNC20LXQu9C10YEsINCa0LDQu9GW0YTQvtGA0L3RltGPLCDQodC_0L7Qu9GD0YfQtdC90ZYg0KjRgtCw0YLQuCDQkNC80LXRgNC40LrQuA!5e0!3m2!1suk!2sua!4v1660388273704!5m2!1suk!2sua"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div>
-                <iframe class="qwe1__n-york"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d136880.69948156807!2d-74.09583136924113!3d40.70338137700003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2z0J3RjNGOLdCZ0L7RgNC6LCDQodC_0L7Qu9GD0YfQtdC90ZYg0KjRgtCw0YLQuCDQkNC80LXRgNC40LrQuA!5e0!3m2!1suk!2sua!4v1660388454788!5m2!1suk!2sua"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div> -->
             
         </div>
     </div>
     <div class="backdrop is-hidden" data-modal2>
         <div class="qwe2 modal container">
-            <button data-modal-close2 type="button">
-                close
+            <button data-modal-close2 type="button" class="close-button">
+                <svg class="" width="11px" height="11px">
+                    <use href="./images/Sprite/icons.svg#close-button"></use>
+                </svg>
             </button>
             <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem excepturi eligendi suscipit quos, autem itaque libero alias eum modi blanditiis.</h2>
         </div>
