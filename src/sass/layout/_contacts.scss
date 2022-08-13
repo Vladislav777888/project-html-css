@@ -1,19 +1,8 @@
-.qwe1 {
-    border: 2px solid tomato;
-    max-width: 320px;
-    background-color: #fff;
-    transform: translate(-50%, -50%) scale(1);
-}
-
-.qwe2 {
-    border: 2px solid rgb(34, 3, 136);
-    max-width: 320px;
-    background-color: red;
-    transform: translate(-50%, -50%) scale(1);
-}
-
-.gt_r {
-    color: yellow;
+.container-tablet {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 .contacts {
@@ -24,11 +13,17 @@
 
 .contact-cards {
     display: inline-block;
-    margin-bottom: 60px;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+    }
+    
 
     &__item {
         padding: 40px 32px;
-
         background-color: var(--main-background-color);
         border-radius: 24px;
         font-weight: 500;
@@ -36,13 +31,31 @@
         line-height: 1.86;
 
         box-shadow:
-            0px 8px 9px rgba(212, 20, 67, 0.1);
+            0px 8px 30px rgba(212, 20, 67, 0.1);      
+        
+        @media screen and (min-width: 768px) {
+            width: 224px;
+            font-size: 14px;
+            line-height: 1.86;
+            
+        }
+        
+        @media screen and (min-width: 1200px) {
+            width: 368px;
+            padding: 40px 40px;
+            font-size: 16px;
+            line-height: 1.87;
+        }
     }
+
 
     &__item:not(:last-child) {
-        margin-bottom: 20px;
+        @media screen and (max-width: 767px) {
+            margin-bottom: 20px;
+        }     
     }
 
+   
     &__categories {
         text-align: center;
         display: inline-flex;
@@ -51,21 +64,43 @@
         margin-bottom: 20px;
         color: var(--text-color-white);
         background-color: #F0D1A5;
-        height: 18px;
+        height: 16px;
         width: 80px;
         border-radius: 4px;
         text-transform: uppercase;
+        
+        @media screen and (min-width: 768px) {
+            height: 28px;
+            width: 73px;
+            font-size: 16px;
+            line-height: 1.875;
+            }
+        
+            @media screen and (min-width: 1200px) {
+                width: 73px;
+            }
+
     }
 
     &__categories--bggreen {
         background-color: #C2E297;
         width: 130px;
+
+        @media screen and (min-width: 768px) {
+            width: 138px;
+        }
+
     }
 
     &__block {
         border-bottom: 1px solid #E1E1E1;
         margin-bottom: 24px;
         padding-bottom: 24px;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 32px;
+            padding-bottom: 32px;
+        }
     }
 
     &__town {
@@ -75,6 +110,14 @@
     &__street {
         color: var(--secondary-text-color);
         line-height: 1.5;
+        
+        @media screen and (min-width: 768px) {
+            line-height: 1.64;
+        }
+
+        @media screen and (min-width: 1200px) {
+            line-height: 1.81;
+        }
     }
 
     &__time {
@@ -83,6 +126,9 @@
 
     &__time--distant {
         margin-bottom: 8px;
+        @media screen and (min-width: 768px) {
+            margin-bottom: 12px;
+        }
     }
 
     &__link {
@@ -91,17 +137,63 @@
     }
 }
 
-.contact-button {
-    text-align: center;
-}
-
 .contact-button--alternative {
-    margin-bottom: 10px;
+    position: relative;
+    margin-right: 0px;
     background-color: var(--accent-color);
     color: var(--text-color-white);
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 10px;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-right: 15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 12px;
+    }
 
     &:hover,
     &:focus {
         background-color: var(--accent-color);
     }
+
+}
+
+.contact-button {
+    position: relative;
+    text-align: center;
+}
+
+
+.button__icon--white {
+    position: absolute;
+    top: 18px;
+    right: 13%;
+    fill: white
+}
+
+.button__icon--red {
+    position: absolute;
+    top: 18px;
+    right: 13%;
+    
+}
+
+.qwe1 {
+    border: 2px solid tomato;
+    max-width: 450px;
+    width: calc(100% - 40px);
+    background-color: #fff;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.qwe2 {
+    border: 2px solid rgb(34, 3, 136);
+    max-width: 450px;
+    width: calc(100% - 40px);
+    background-color: red;
+    transform: translate(-50%, -50%) scale(1);
 }
