@@ -1,0 +1,107 @@
+.qwe1 {
+    border: 2px solid tomato;
+    max-width: 320px;
+    background-color: #fff;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.qwe2 {
+    border: 2px solid rgb(34, 3, 136);
+    max-width: 320px;
+    background-color: red;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.gt_r {
+    color: yellow;
+}
+
+.contacts {
+    background-image: linear-gradient(to bottom,
+            #fff 33%,
+            #FFF5F6 40%);
+}
+
+.contact-cards {
+    display: inline-block;
+    margin-bottom: 60px;
+
+    &__item {
+        padding: 40px 32px;
+
+        background-color: var(--main-background-color);
+        border-radius: 24px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.86;
+
+        box-shadow:
+            0px 8px 9px rgba(212, 20, 67, 0.1);
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    &__categories {
+        text-align: center;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        color: var(--text-color-white);
+        background-color: #F0D1A5;
+        height: 18px;
+        width: 80px;
+        border-radius: 4px;
+        text-transform: uppercase;
+    }
+
+    &__categories--bggreen {
+        background-color: #C2E297;
+        width: 130px;
+    }
+
+    &__block {
+        border-bottom: 1px solid #E1E1E1;
+        margin-bottom: 24px;
+        padding-bottom: 24px;
+    }
+
+    &__town {
+        margin-bottom: 8px;
+    }
+
+    &__street {
+        color: var(--secondary-text-color);
+        line-height: 1.5;
+    }
+
+    &__time {
+        color: var(--color-hero-elips-and-label-and-time);
+    }
+
+    &__time--distant {
+        margin-bottom: 8px;
+    }
+
+    &__link {
+        color: var(--secondary-text-color);
+        line-height: 1.5;
+    }
+}
+
+.contact-button {
+    text-align: center;
+}
+
+.contact-button--alternative {
+    margin-bottom: 10px;
+    background-color: var(--accent-color);
+    color: var(--text-color-white);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+}
