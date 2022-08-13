@@ -30,7 +30,7 @@
         font-weight: 500;
         font-size: 12px;
         line-height: 1.86;
-
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
         box-shadow:
             0px 8px 30px rgba(212, 20, 67, 0.1);      
         
@@ -46,6 +46,10 @@
             padding: 40px 40px;
             font-size: 16px;
             line-height: 1.87;
+        }
+
+        &:hover {
+            transform: scale(1.1);
         }
     }
 
