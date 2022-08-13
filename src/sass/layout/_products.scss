@@ -153,6 +153,7 @@ left: 147px;
     line-height: 152%;
     display: inherit;
     margin-top: 32px;
+    margin-bottom: 32px;
 
     text-align: center;
     letter-spacing: 0.04em;
@@ -171,6 +172,10 @@ left: 147px;
 
   &__btn{
     border: none;
+    background: none;
+    margin: 0 auto;
+    display: block;
+
   }
 
 }
