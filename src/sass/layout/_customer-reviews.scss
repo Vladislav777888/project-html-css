@@ -21,10 +21,13 @@
 //     @extend %flex-centered;
 // }
 .customer-reviews__photo {
+    width: 85px;
+    height: 85px;
     border-radius: 50%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    
 }
 // .customer-reviews__item {
 //     display: flex;
@@ -32,12 +35,50 @@
 //     justify-content: center;
 //     align-items: center;
 // }
-.customer-reviews__text {
+.customer-reviews__post {
+    // position: relative;
     margin-top: 16px;
     margin-bottom: 16px;
     padding: 47px 109px 39px 109px;
     background-color: var(--bg-color-revues);
     text-align: center;
+    border: 1px solid #E1E1E1;
+}
+.customer-reviews__text {
+    position: relative;
+    overflow: hidden;
+//   background-image: repeating-linear-gradient(
+//     to bottom,
+//     #E1E1E1,
+//     #E1E1E1 1px,
+//     transparent 1px,
+//     transparent 30px
+//   );
+}
+.customer-reviews__text::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 42px;
+    display: block;
+    position: absolute;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    #E1E1E1,
+    #E1E1E1 1px,
+    transparent 1px,
+    transparent 30px
+  );
+}
+
+    .customer-reviews__arrow::before {
+    display: inline-block;
+    margin-right: -7px;
+    margin-bottom: -5px;
+    content: '';
+    width: 54px;
+    height: 40px;
+    background-image: url(/src/images/customer-reviews/arrov_icon.png);
 }
 .customer-reviews__contacts {
     text-align: center;
@@ -77,15 +118,46 @@
     border-radius: 50%;
     background-color: var(--bg-color-revues-point);
 }
-
-.slick-dots li {
- color: red;   
+// .slick-active {
+//     position: relative;
+//     width: 12px;
+//     height: 9.8px;
+// }
+.slick-dots {
+    position: relative;
 }
-.slick-dots li.slick-active button:before {
-    opacity: .75;
-    color:tomato;
+.customer-reviews__icon {
+    position: absolute;
+    width: 100%;
 }
-// .slick-dots li button:before {
-//     color: green;
+// .slick-dots li {
+//  color: red;   
 // }
 
+// .slick-dots li button:before
+// {
+//     font-family: 'slick';
+//     font-size: 6px;
+//     line-height: 20px;
+
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+
+//     width: 20px;
+//     height: 20px;
+
+//     content: '•';
+//     text-align: center;
+
+//     opacity: .25;
+//     color: yellowgreen;
+
+//     -webkit-font-smoothing: antialiased;
+//     -moz-osx-font-smoothing: grayscale;
+// }
+// .slick-dots li.slick-active button:before
+// {
+//     opacity: .75;
+//     color: blue;
+// }
