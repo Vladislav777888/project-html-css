@@ -66,7 +66,7 @@
     content: '';
     width: 54px;
     height: 40px;
-    background-image: url(/src/images/customer-reviews/arrov_icon.png);
+    background-image: url(/src/images/customer-reviews/arrov-icon.svg);
     background-repeat: no-repeat;
     @media screen and (min-width:768px) {
         margin-left: 0;
@@ -189,7 +189,7 @@
 .slick-dots>li.slick-active button:before {
     width: 12.4px;
     height: 11.84px;
-    background-image: url(/src/images/customer-reviews/Vector.svg);
+    background-image: url(/src/images/customer-reviews/house-icon.svg);
     background-repeat: no-repeat;    
     // border: 1px solid red;
     background-position: 50% 50%;
