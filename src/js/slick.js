@@ -6,5 +6,7 @@ $('.one-time').slick({
   adaptiveHeight: true,
   autoplay: true,
   autoplaySpeed: 4000,
-  arrows: false
+  arrows: false,
+  lazyLoad: true,
+  mobileFirst: true
 });
