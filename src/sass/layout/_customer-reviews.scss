@@ -183,12 +183,11 @@
     font-size: 12px !important;
     width: 12px;
     height: 12px;
+    padding-right: 8px;
     // border: 1px solid green;
 }
 
 .slick-dots>li.slick-active button:before {
-    width: 12.4px;
-    height: 11.84px;
     background-image: url(/src/images/customer-reviews/house-icon.svg);
     background-repeat: no-repeat;    
     // border: 1px solid red;
@@ -196,7 +195,7 @@
     background-size: 100%;
     padding-top: 18px;
     color: transparent !important;
-        display: block;
+    display: block;
     width: 12px;
     height: 12px;
     cursor: pointer;
