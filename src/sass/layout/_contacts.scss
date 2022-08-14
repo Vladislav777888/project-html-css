@@ -140,6 +140,17 @@
         color: var(--secondary-text-color);
         line-height: 1.5;
     }
+
+    &__tel, &__mail {
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__tel:hover,
+    &__tel:focus,
+    &__mail:hover,
+    &__mail:focus {
+        color: var(--accent-color);
+    }
 }
 
 .contact-button__list {
