@@ -1,0 +1,129 @@
+.advantages {
+    background-color: var(--secondary-background-color);
+
+    &__list {
+        position: relative;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            gap: 22px;
+        }
+        @media screen and (min-width: 1200px) {
+            gap: 115px;
+        }
+    }
+
+    &__item {
+        position: inherit;
+
+        max-width: 230px;
+        margin-bottom: 32px;
+        padding-top: 66px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+        
+        &--bucket::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            content: '';
+            width: 33px;
+            height: 50px;
+
+            background-image: url(.././images/about/bucket.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            object-fit: cover;
+        }
+
+        &--apples::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: '';
+            width: 50px;
+            height: 50px;
+
+            background-image: url(.././images/advantages/apples.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            object-fit: cover;
+        }
+
+        &--ice::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            content: '';
+            width: 44px;
+            height: 50px;
+
+            background-image: url(.././images/about/ice.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            object-fit: cover;
+        }
+
+
+        @media screen and (min-width: 768px) {
+            max-width: 180px;
+            margin: 0;
+            padding-top: 86px;
+            
+        }
+        
+        @media screen and (min-width: 1200px) {
+            max-width: 288px;
+            padding-top: 90px;
+        }
+    }
+
+
+
+    &__number {
+
+        color: var(--accent-color);
+        font-family: 'Titan One';
+        font-size: 36px;
+        line-height: 1.14;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+
+
+        @media screen and (min-width: 768px) {
+            font-size: 48px;
+            text-transform: none;
+        }
+        @media screen and (min-width: 1200px) {
+            font-size: 58px;
+        }
+    }
+
+
+    &__text {
+        margin-top: 20px;
+
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1.7;
+
+        @media screen and (min-width: 768px) {
+            margin-top: 13px;
+            font-size: 14px;
+            line-height: 1.74;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-top: 16px;
+            font-size: 16px;
+            line-height: 1.76;
+        }
+    }
+}
