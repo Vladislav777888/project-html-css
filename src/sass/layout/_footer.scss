@@ -1,5 +1,5 @@
 .footer {
-  position: relative;
+  // position: relative;
   width: 100%;
   padding-top: 20px;
 
@@ -91,11 +91,11 @@
       width: 100%;
       padding-top: 8px;
     }
-  }
 
-  @media scrren and (min-width: 1200px) {
-    padding-top: 7px;
-    padding-bottom: 4px;
+    @media scrren and (min-width: 1200px) {
+      padding-top: 7px;
+      padding-bottom: 4px;
+    }
   }
 
   &__copy {
