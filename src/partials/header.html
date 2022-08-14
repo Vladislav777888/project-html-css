@@ -1,7 +1,10 @@
 <header class="page-header">
   <div class="container page-header__inner">
     <!-- add logo -->
-    <a href="./index.html" class="page-header__icon logo page-header__logo">
+    <a
+      href="./index.html"
+      class="page-header__icon logo page-header__logo animate__animated"
+    >
       <svg width="199" height="50">
         <use href="./images/Sprite/icons.svg#icon-icecream"></use>
       </svg>
@@ -51,50 +54,53 @@
       data-mobile-menu-open
     >
       <svg width="20" height="14">
-         <use href="./images/Sprite/icons.svg#icon-head-burger"></use>
-      </svg> 
+        <use href="./images/Sprite/icons.svg#icon-head-burger"></use>
+      </svg>
     </button>
 
     <div data-mobile-menu class="mobile-menu is-hidden">
       <div class="mobile-menu__div">
-      <button
-        class="page-header__icon mobile-menu__close-menu"
-        type="button"
-        aria-label="Close site menu"
-        data-mobile-menu-close
-      >
-        <svg class="icon" width="14" height="14">
-          <use href="./images/Sprite/icons.svg#icon-head-close"></use>
-        </svg>
-      </button>
-      <button class="button mobile-menu__button" data-modal-open-mobile>
-        Buy now
-        <svg width="6" height="8" class="icon button__icon button__icon--right">
-          <use href="./images/sprite/icons.svg#icon-vector-right"></use>
-        </svg>
-      </button>
+        <button
+          class="page-header__icon mobile-menu__close-menu"
+          type="button"
+          aria-label="Close site menu"
+          data-mobile-menu-close
+        >
+          <svg class="icon" width="14" height="14">
+            <use href="./images/Sprite/icons.svg#icon-head-close"></use>
+          </svg>
+        </button>
+        <button class="button mobile-menu__button" data-modal-open-mobile>
+          Buy now
+          <svg
+            width="6"
+            height="8"
+            class="icon button__icon button__icon--right"
+          >
+            <use href="./images/sprite/icons.svg#icon-vector-right"></use>
+          </svg>
+        </button>
+      </div>
+      <nav>
+        <ul class="site-nav">
+          <li class="site-nav__item">
+            <a href="#hero" class="link site-nav__link">Home</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="#advantages" class="link site-nav__link">About us</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="#about" class="link site-nav__link">How it's made?</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="#products" class="link site-nav__link">Our products</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="#contacts" class="link site-nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul class="site-nav">
-        <li class="site-nav__item">
-          <a href="#hero" class="link site-nav__link">Home</a>
-        </li>
-        <li class="site-nav__item">
-          <a href="#advantages" class="link site-nav__link">About us</a>
-        </li>
-        <li class="site-nav__item">
-          <a href="#about" class="link site-nav__link">How it's made?</a>
-        </li>
-        <li class="site-nav__item">
-          <a href="#products" class="link site-nav__link">Our products</a>
-        </li>
-        <li class="site-nav__item">
-          <a href="#contacts" class="link site-nav__link">Contact</a>
-        </li>
-      </ul>
-    </nav>
-    </div>
-
   </div>
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
@@ -122,7 +128,7 @@
               </svg>
             </div>
           </div>
-  
+
           <div class="form-group">
             <label class="form-group__label" for="tel">Телефон</label>
             <div class="form-group__input-inner">
@@ -132,7 +138,7 @@
               </svg>
             </div>
           </div>
-  
+
           <div class="form-group">
             <label class="form-group__label" for="mail">Почта</label>
             <div class="form-group__input-inner">
@@ -147,7 +153,7 @@
               </svg>
             </div>
           </div>
-  
+
           <div class="form-group-textarea">
             <label class="form-group__label" for="comment">Комментарий</label>
             <textarea
@@ -157,7 +163,7 @@
               placeholder="Введите текст"
             ></textarea>
           </div>
-  
+
           <label class="form__label-checkbox">
             <input
               class="form__input-checkbox"
