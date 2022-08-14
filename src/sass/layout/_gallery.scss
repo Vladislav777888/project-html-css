@@ -1,22 +1,30 @@
 .gallery {
-    margin-left: auto;
-    margin-right: auto;
-
-    min-height: 136px;
-    width: 320px;
     background-image:
     linear-gradient(to bottom,
      #fff5f6 23%,
      #e5e5e5 23%);
-
-    @media screen and (min-width: 327px) {
-        min-height: 327px;
-        width: 768px;
+    
+    &__img {
+        border-radius: 20px;
+        overflow: hidden;
     }
+    
+    &__container {
+        margin-left: auto;
+        margin-right: auto;
 
-    @media screen and (min-width: 430px) {
-        min-height: 430px;
-        width: 1013px;
+        min-height: 136px;
+        width: 320px;
+
+        @media screen and (min-width: 327px) {
+            min-height: 327px;
+            width: 768px;
+        }
+    
+        @media screen and (min-width: 430px) {
+            min-height: 430px;
+            width: 1013px;
+        }        
     }
 }
 
