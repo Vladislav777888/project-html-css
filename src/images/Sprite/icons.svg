@@ -44,6 +44,10 @@
         <symbol id="icon-email-black" viewBox="0 0 32 32">
             <path d="M26.667 5.333H5.334A2.662 2.662 0 0 0 2.682 8l-.014 16c0 1.467 1.2 2.667 2.667 2.667h21.333c1.467 0 2.667-1.2 2.667-2.667V8c0-1.467-1.2-2.667-2.667-2.667zm-.534 5.668-9.426 5.892a1.343 1.343 0 0 1-1.421-.004l.006.003L5.866 11A1.133 1.133 0 1 1 7.07 9.083l-.004-.003 8.933 5.586 8.933-5.588a1.132 1.132 0 1 1 1.204 1.916l-.005.003z"/>
         </symbol>
+        <symbol id="icon-arrow-right_buttons-white" viewBox="0 0 7 10" fill="none"><path d="M1.40259 1L5.6838 5L1.40259 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+        <symbol id="icon-arrow-right_buttons-red" viewBox="0 0 7 10" fill="none"><path d="M1.08459 1L5.36581 5L1.08459 9" stroke="#D41443" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+        <symbol id="close-button" viewBox="0 0 11 11"><path d="M11 1.10786L9.89214 0L5.5 4.39214L1.10786 0L0 1.10786L4.39214 5.5L0 9.89214L1.10786 11L5.5 6.60786L9.89214 11L11 9.89214L6.60786 5.5L11 1.10786Z"/></symbol>
     </defs>
 </svg>
+
 
