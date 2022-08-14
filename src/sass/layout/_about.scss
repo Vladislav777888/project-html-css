@@ -1,82 +1,144 @@
 .about {
     padding-bottom: 20px;
     padding-top: 60px;
-    // @media screen and (min-width:768px) {
-    //     padding-bottom: 30px;
-    // }
+    @media screen and (min-width:768px) {
+        padding-bottom: 30px;
+    }
 
     background-color: var(--secondary-background-color);
+    @media screen and (min-width:1200px) {
+        background-image: url(../images/about/milk-bgi1200.png);
+        background-repeat: no-repeat;
+        background-position-y: 100%;
+        background-size: contain;
+
+        @media (min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
+            background-image: url(../images/about/milk-bgi1200@2x.png);
+        }
+    }
+
+    &__thumb {
+        @media screen and (min-width:768px) {
+            display: flex;
+        }
+    }
+
+    &__holder {
+        @media screen and (max-width:767px) {
+            background-image: url(../images/about/milk-bgi320.png);
+            background-repeat: no-repeat;
+            background-position-y: 30%;
+            background-size: contain;
+    
+            @media (min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
+                background-image: url(../images/about/milk-bgi320@2x.png);
+            }
+        }
+        // вирівнювання тексту на десктопі 
+        // @media screen and (min-width:1200px) {
+        //    display: flex;
+        //     align-items: center;
+        // }
+        
+    }
 
     &__container {
         @media screen and (max-width:767px) {
             width: 220px;
         }
+        @media screen and (min-width:768px) {
+            width: 334px;
+        }
+        @media screen and (min-width:1200px) {
+            width: 463px;
+            // вирівнювання тексту на десктопі
+            margin-top: 90px;
+        }
     }
 
     &__text {
-        margin-bottom: 30px;
+        margin-bottom: 27px;
 
         font-weight: 500;
         font-size: 12px;
         line-height: 1.62;
         letter-spacing: 0;
 
-        // @media screen and (min-width:768px) {
-            
-        // }
-        // @media screen and (min-width:1200px) {
-            
-        // }
+        @media screen and (min-width:768px) {
+            margin-bottom: 40px;
+
+            font-size: 14px;
+            line-height: 1.76;
+        }
+        @media screen and (min-width:1200px) {
+            margin-bottom: 32px;
+
+            font-size: 16px; 
+        }
 
         &--lighter {
             margin-bottom: 20px;
-
+            
+            font-weight: 400;
             color: var(--secondary-text-color);
 
-            // @media screen and (min-width:768px) {
-            //     margin-bottom: 25px;
-            //     // margin-bottom: 40px;
-            //     // для последнего абзаца добавить
-                
-            // }
-            // @media screen and (min-width:1200px) {
-                
-            // }
+            @media screen and (min-width:768px) {
+                margin-bottom: 25px;
+                &:nth-child(odd){
+                    margin-bottom: 40px;
+                }
+            }
+            @media screen and (min-width:1200px) {
+                margin-bottom: 44px;
+                font-size: 14px;
+            }
         }
     }
 
     &__image {
+        flex-shrink: 0;
         @media screen and (max-width:767px) {
             margin-bottom: 40px;
-
-            width: 280px;
-            height: 279px;
         }
+        @media screen and (min-width:768px) {
+            margin-right: 32px;
+        }
+        @media screen and (min-width:1200px) {
+            margin-right: 99px;
+        }
+    }
 
-        // @media screen and (min-width:768px) {
-        //     width: 333px;
-        //     height: 335px;
-        // }
-        // @media screen and (min-width:768px) {
-        //     width: 501px;
-        //     height: 501px;
-        // }
+    &__button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.button {
+    &__text {
+        font-size: 14px;
+        line-height: 1.29;
+        @media screen and (min-width:768px) {
+            font-size: 16px;
+            line-height: 1.31;
+        }
     }
 }
 
 .about__mb-small {
     margin-bottom: 15px;
-    // @media screen and (min-width:768px) {
-    //    margin-bottom: 16px; 
-    // }
+    @media screen and (min-width:768px) {
+       margin-bottom: 16px; 
+    }
 }
 
 .about__mb-big {
     margin-bottom: 32px;
-    // @media screen and (min-width:768px) {
-    //     margin-bottom: 40px;
-    // }
-    // @media screen and (min-width:1200px) {
-    //     margin-bottom: 60px;
-    // }
+    @media screen and (min-width:768px) {
+        margin-bottom: 40px;
+    }
+    @media screen and (min-width:1200px) {
+        margin-bottom: 60px;
+    }
 }
