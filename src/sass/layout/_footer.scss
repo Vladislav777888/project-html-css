@@ -1,0 +1,185 @@
+.footer{
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 60px;
+    @media screen and (min-width:768px) {
+        padding-bottom: 30px;
+    }
+    background-color: var(--secondary-background-color);
+}
+
+.text1 {
+    display: block;
+    @media screen and (max-width:767px) {
+        width: 232px;
+   }
+    @media screen and (min-width:768px){
+        width: 340px;
+        font-family: 'Titan One';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 26px;
+            line-height: 1.15;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+   }
+   @media screen and (min-width:1200px) {
+    width: 472px;
+    font-family: 'Titan One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 1.13;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+    }
+}
+
+.text2{
+    @media screen and (max-width:767px) {
+        width: 200px;
+        font-family: 'Titan One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 1.15;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+   }
+   @media screen and (min-width:768px) {
+       width: 340px;
+       font-family: 'Titan One';
+       font-style: normal;
+       font-weight: 400;
+       font-size: 48px;
+       line-height: 1.15;
+       letter-spacing: 0.06em;
+       text-transform: uppercase;
+    }
+    @media screen and (min-width:1200px) {
+        width: 474px;
+        font-family: 'Titan One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 58px;
+        line-height: 1.14;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    }
+}
+.container {
+    display: block;
+    @media screen and (max-width:767px) {
+    width: 320px;
+    }
+}
+
+.footer__text-small {
+    @media screen and (max-width:767px) {
+    font-family: 'Titan One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+    margin-bottom: 16px;
+    margin-right: 66px;}
+
+    @media screen and (min-width:768px) {
+       margin-bottom: 12px;
+
+    }
+    @media screen and (min-width:1200px) {
+        margin-bottom: 16px;
+    }
+}
+
+.footer__text-big {
+    margin-bottom: 40px;
+
+    @media screen and (min-width:1200px) {
+        margin-bottom: 60px;
+        width: 475px;
+        font-family: 'Titan One';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 57px;
+            line-height: 1.14;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+    }
+}
+
+.address__link{
+    font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1.86;
+          
+        text-align: right;
+    
+        color: #000000;
+}
+.social{
+    width: 100%;
+}
+.social-list {
+    display: flex;
+    justify-content: flex-end;
+    
+    &__icon{
+        width: 32px;
+        height: 32px;
+    }
+
+    &__item:not(:last-child){
+        margin-right: 30px;
+    } 
+}
+
+.copy{
+    display: flex;
+    justify-content: center;
+    padding-top: 16px;
+       width: 280px;
+    font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.52;
+        color:var(--secondary-text-color);
+        
+    @media screen and (min-width:768px) {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.86;
+        letter-spacing: 0.02em;
+        width: 278px;
+        display: flex;
+            justify-content: center;
+            padding-top: 16px;
+    }
+   
+}
+
+.tel{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    
+}
+// 
+// 
+.social-list {
+    display: flex;
+    margin-bottom: 40px;
+  
+    &__link:hover,
+    &__link:focus {
+        fill:var(--text-color-white) ;
+        color: var(--accent-color);
+        outline: none;
+        cursor: pointer;
+        }
+}
