@@ -16,12 +16,12 @@
         min-height: 136px;
         width: 320px;
 
-        @media screen and (min-width: 327px) {
+        @media screen and (min-width: 768px) {
             min-height: 327px;
             width: 768px;
         }
     
-        @media screen and (min-width: 430px) {
+        @media screen and (min-width: 1200px) {
             min-height: 430px;
             width: 1013px;
         }        
