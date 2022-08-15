@@ -65,15 +65,23 @@
     margin-top: 140px;
   }
   &__container--pink::before {
-    content: url(/src/images/products/ice_cream320.png);
+    display: inline-block;
+    content: '';
+    width: 280px;
+    height: 280px;
+    background-image: url(/src/images/products/ice_cream320.png);
+    background-repeat: no-repeat;
+    background-size: contain;
     position: absolute;
     top: -140px;
+
     animation: shakeX;
     animation-duration: 5s;
+
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 2dppx),
       (min-resolution: 192dpi) {
-      content: url(/src/images/products/ice_cream320@2x.png);
+      background-image: url(/src/images/products/ice_cream320@2x.png);
     }
   }
   @media screen and (min-width: 768px) {
@@ -85,13 +93,21 @@
   }
   @media screen and (min-width: 768px) {
     &__container--pink::before {
-      content: url(/src/images/products/ice_cream768.png);
+      display: inline-block;
+    content: '';
+    width: 224px;
+    height: 224px;
+      background-image: url(/src/images/products/ice_cream768.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+
       position: absolute;
       top: -138px;
+
       @media (min-device-pixel-ratio: 2),
         (min-resolution: 2dppx),
         (min-resolution: 192dpi) {
-        content: url(/src/images/products/ice_cream768@2x.png);
+        background-image: url(/src/images/products/ice_cream768@2x.png);
       }
     }
   }
@@ -104,13 +120,21 @@
   }
   @media screen and (min-width: 1200px) {
     &__container--pink::before {
-      content: url(/src/images/products/ice_cream1200.png);
+      display: inline-block;
+      content: '';
+     width: 368px;
+     height: 394px;
+      background-image: url(/src/images/products/ice_cream1200.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+
       position: absolute;
       top: -261px;
+
       @media (min-device-pixel-ratio: 2),
         (min-resolution: 2dppx),
         (min-resolution: 192dpi) {
-        content: url(/src/images/products/ice_cream1200@2x.png);
+        background-image: url(/src/images/products/ice_cream1200@2x.png);
       }
     }
   }
@@ -120,15 +144,24 @@
     margin-top: 140px;
   }
   &__container--yellow::before {
-    content: url(/src/images/products/ice_coffee320.png);
+    display: inline-block;
+    content: '';
+    width: 280px;
+    height: 280px;
+    background-image: url(/src/images/products/ice_coffee320.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
     position: absolute;
     top: -140px;
+
     animation: shakeX;
     animation-duration: 5s;
+
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 2dppx),
       (min-resolution: 192dpi) {
-      content: url(/src/images/products/ice_coffee320@2x.png);
+      background-image: url(/src/images/products/ice_coffee320@2x.png);
     }
   }
   @media screen and (min-width: 768px) {
@@ -140,13 +173,21 @@
   }
   @media screen and (min-width: 768px) {
     &__container--yellow::before {
-      content: url(/src/images/products/ice_coffee768.png);
+      display: inline-block;
+      content: '';
+      width: 224px;
+      height: 224px;
+     background-image: url(/src/images/products/ice_coffee768.png);
+     background-repeat: no-repeat;
+     background-size: contain;
+
       position: absolute;
       top: -138px;
+
       @media (min-device-pixel-ratio: 2),
         (min-resolution: 2dppx),
         (min-resolution: 192dpi) {
-        content: url(/src/images/products/ice_coffee768@2x.png);
+        background-image: url(/src/images/products/ice_coffee768@2x.png);
       }
     }
   }
@@ -159,13 +200,21 @@
   }
   @media screen and (min-width: 1200px) {
     &__container--yellow::before {
-      content: url(/src/images/products/ice_coffee1200.png);
+      display: inline-block;
+      content: '';
+      width: 368px;
+     height: 394px;
+      background-image: url(/src/images/products/ice_coffee1200.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+
       position: absolute;
       top: -261px;
+
       @media (min-device-pixel-ratio: 2),
         (min-resolution: 2dppx),
         (min-resolution: 192dpi) {
-        content: url(/src/images/products/ice_coffee1200@2x.png);
+        background-image: url(/src/images/products/ice_coffee1200@2x.png);
       }
     }
   }
@@ -175,15 +224,24 @@
     margin-top: 140px;
   }
   &__container--green::before {
-    content: url(/src/images/products/milkshakes320.png);
+    display: inline-block;
+    content: '';
+    width: 280px;
+    height: 280px;
+   background-image: url(/src/images/products/milkshakes320.png);
+   background-repeat: no-repeat;
+   background-size: contain;
+
     position: absolute;
     top: -140px;
+
     animation: shakeX;
     animation-duration: 5s;
+
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 2dppx),
       (min-resolution: 192dpi) {
-      content: url(/src/images/products/milkshakes320@2x.png);
+      background-image: url(/src/images/products/milkshakes320@2x.png);
     }
   }
   @media screen and (min-width: 768px) {
@@ -195,13 +253,21 @@
   }
   @media screen and (min-width: 768px) {
     &__container--green::before {
-      content: url(/src/images/products/milkshakes768.png);
+      display: inline-block;
+      content: '';
+      width: 224px;
+      height: 224px;
+      background-image: url(/src/images/products/milkshakes768.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+
       position: absolute;
       top: -138px;
+
       @media (min-device-pixel-ratio: 2),
         (min-resolution: 2dppx),
         (min-resolution: 192dpi) {
-        content: url(/src/images/products/milkshakes768@2x.png);
+        background-image: url(/src/images/products/milkshakes768@2x.png);
       }
     }
   }
@@ -214,13 +280,21 @@
   }
   @media screen and (min-width: 1200px) {
     &__container--green::before {
-      content: url(/src/images/products/milkshakes1200.png);
+      display: inline-block;
+      content: '';
+      width: 368px;
+     height: 394px;
+     background-image: url(/src/images/products/milkshakes1200.png);
+     background-repeat: no-repeat;
+     background-size: contain;
+
       position: absolute;
       top: -261px;
+
       @media (min-device-pixel-ratio: 2),
         (min-resolution: 2dppx),
         (min-resolution: 192dpi) {
-        content: url(/src/images/products/milkshakes1200@2x.png);
+        background-image: url(/src/images/products/milkshakes1200@2x.png);
       }
     }
   }
