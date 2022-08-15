@@ -5,8 +5,12 @@
      #e5e5e5 23%);
     
     &__img {
-        border-radius: 20px;
+        border-radius: 8px;
         overflow: hidden;
+
+        @media screen and (min-width: 768px) {
+            border-radius: 20px;
+        }
     }
     
     &__container {
@@ -34,12 +38,12 @@
     align-items: center;
     gap: 3px;
 
-    @media screen and (min-width: 327px) {
+    @media screen and (min-width: 768px) {
         gap: 6px;
     }
 
-    @media screen and (min-width: 430px) {
-        gap: 8px;
+    @media screen and (min-width: 1200px) {
+        gap: 9px;
     }
 }
 
@@ -47,11 +51,11 @@
     flex-basis: calc((100% - 3px * 5) / 7);
     transition: transform 500ms linear;
 
-    @media screen and (min-width: 327px) {
+    @media screen and (min-width: 768px) {
         flex-basis: calc((100% - 6px * 5) / 7);
     }
 
-    @media screen and (min-width: 430px) {
+    @media screen and (min-width: 1200px) {
         flex-basis: calc((100% - 8px * 5) / 7);
     }
 }
@@ -111,38 +115,56 @@
 }
 
 .grid-item--position7 {
-    transform: translateX(107%) translateY(-45%) rotateY(0deg);
+    transform: translateX(107%) translateY(-43%) rotateY(0deg);
 
     &:hover,
     &:focus {
-        transform: translateX(107%) translateY(-45%) rotateY(180deg);
+        transform: translateX(107%) translateY(-43%) rotateY(180deg);
     }
 }
 
 .grid-item--position8 {
-    transform: translateX(107%) translateY(0%) rotateY(0deg);
+    transform: translateX(107%) translateY(-2%) rotateY(0deg);
 
     &:hover,
     &:focus {
-        transform: translateX(107%) translateY(00%) rotateY(180deg);
+        transform: translateX(107%) translateY(-2%) rotateY(180deg);
     }
 }
 
 .grid-item--position9 {
-    transform: translateX(210%) translateY(-30%) rotateY(0deg);
+    transform: translateX(207%) translateY(-28%) rotateY(0deg);
 
     &:hover,
     &:focus {
-        transform: translateX(210%) translateY(-30%) rotateY(180deg);
+        transform: translateX(207%) translateY(-28%) rotateY(180deg);
+    }
+
+    @media screen and (min-width: 1200px) {
+        transform: translateX(204%) translateY(-26%) rotateY(0deg);
+
+        &:hover,
+        &:focus {
+            transform: translateX(204%) translateY(-26%) rotateY(180deg);
+        }
     }
 }
 
 .grid-item--position10 {
-    transform: translateX(208%) translateY(-60%) rotateY(0deg);
+    transform: translateX(207%) translateY(-56%) rotateY(0deg);
 
     &:hover,
     &:focus {
-        transform: translateX(208%) translateY(-60%) rotateY(180deg);
+        transform: translateX(207%) translateY(-56%) rotateY(180deg);
+    }
+
+    @media screen and (min-width: 1200px) {
+        transform: translateX(203%) translateY(-56%) rotateY(0deg);
+
+        &:hover,
+        &:focus {
+            transform: translateX(203%) translateY(-56%) rotateY(180deg);
+        }
     }
 }
 
