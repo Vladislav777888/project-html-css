@@ -2,12 +2,11 @@
   background-image: linear-gradient(to bottom, #fff5f6 23%, #ffffff 23%);
 
   &__img {
-    border-radius: 20px;
+    border-radius: 8px;
     overflow: hidden;
-    width: 138px;
 
-    &--big {
-      width: 283px;
+    @media screen and (min-width: 768px) {
+      border-radius: 20px;
     }
   }
 
@@ -41,7 +40,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    gap: 8px;
+    gap: 9px;
   }
 }
 
@@ -104,7 +103,7 @@
 }
 
 .grid-item--position6 {
-  transform: translateY(5%) rotateY(0deg);
+  transform: translateY(55%) rotateY(0deg);
 
   &:hover,
   &:focus {
@@ -113,38 +112,56 @@
 }
 
 .grid-item--position7 {
-  transform: translateX(107%) translateY(-45%) rotateY(0deg);
+  transform: translateX(107%) translateY(-43%) rotateY(0deg);
 
   &:hover,
   &:focus {
-    transform: translateX(107%) translateY(-45%) rotateY(180deg);
+    transform: translateX(107%) translateY(-43%) rotateY(180deg);
   }
 }
 
 .grid-item--position8 {
-  transform: translateX(107%) translateY(0%) rotateY(0deg);
+  transform: translateX(107%) translateY(-2%) rotateY(0deg);
 
   &:hover,
   &:focus {
-    transform: translateX(107%) translateY(00%) rotateY(180deg);
+    transform: translateX(107%) translateY(-2%) rotateY(180deg);
   }
 }
 
 .grid-item--position9 {
-  transform: translateX(210%) translateY(-30%) rotateY(0deg);
+  transform: translateX(207%) translateY(-28%) rotateY(0deg);
 
   &:hover,
   &:focus {
-    transform: translateX(210%) translateY(-30%) rotateY(180deg);
+    transform: translateX(207%) translateY(-28%) rotateY(180deg);
+  }
+
+  @media screen and (min-width: 1200px) {
+    transform: translateX(204%) translateY(-26%) rotateY(0deg);
+
+    &:hover,
+    &:focus {
+      transform: translateX(204%) translateY(-26%) rotateY(180deg);
+    }
   }
 }
 
 .grid-item--position10 {
-  transform: translateX(208%) translateY(-60%) rotateY(0deg);
+  transform: translateX(207%) translateY(-56%) rotateY(0deg);
 
   &:hover,
   &:focus {
-    transform: translateX(208%) translateY(-60%) rotateY(180deg);
+    transform: translateX(207%) translateY(-56%) rotateY(180deg);
+  }
+
+  @media screen and (min-width: 1200px) {
+    transform: translateX(203%) translateY(-56%) rotateY(0deg);
+
+    &:hover,
+    &:focus {
+      transform: translateX(203%) translateY(-56%) rotateY(180deg);
+    }
   }
 }
 
