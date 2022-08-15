@@ -1,151 +1,153 @@
 .gallery {
-    background-image:
-    linear-gradient(to bottom,
-     #fff5f6 23%,
-     #e5e5e5 23%);
-    
-    &__img {
-        border-radius: 20px;
-        overflow: hidden;
-    }
-    
-    &__container {
-        margin-left: auto;
-        margin-right: auto;
+  background-image: linear-gradient(to bottom, #fff5f6 23%, #ffffff 23%);
 
-        min-height: 136px;
-        width: 320px;
+  &__img {
+    border-radius: 20px;
+    overflow: hidden;
+    width: 138px;
 
-        @media screen and (min-width: 327px) {
-            min-height: 327px;
-            width: 768px;
-        }
-    
-        @media screen and (min-width: 430px) {
-            min-height: 430px;
-            width: 1013px;
-        }        
+    &--big {
+      width: 283px;
     }
+  }
+
+  &__container {
+    margin-left: auto;
+    margin-right: auto;
+
+    max-height: 136px;
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+      max-height: 327px;
+      // width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      max-height: 430px;
+      width: 1013px;
+    }
+  }
 }
 
 .grid {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 3px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 3px;
 
-    @media screen and (min-width: 327px) {
-        gap: 6px;
-    }
+  @media screen and (min-width: 768px) {
+    gap: 6px;
+  }
 
-    @media screen and (min-width: 430px) {
-        gap: 8px;
-    }
+  @media screen and (min-width: 1200px) {
+    gap: 8px;
+  }
 }
 
 .grid-item {
-    flex-basis: calc((100% - 3px * 5) / 7);
-    transition: transform 500ms linear;
+  flex-basis: calc((100% - 3px * 5) / 7);
+  transition: transform 500ms linear;
 
-    @media screen and (min-width: 327px) {
-        flex-basis: calc((100% - 6px * 5) / 7);
-    }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 6px * 5) / 7);
+  }
 
-    @media screen and (min-width: 430px) {
-        flex-basis: calc((100% - 8px * 5) / 7);
-    }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 8px * 5) / 7);
+  }
 }
 
 .grid-item--position1 {
-    transform: translateY(50%) rotateY(0deg);
+  transform: translateY(50%) rotateY(0deg);
 
-    &:hover,
-    &:focus {
-        transform: translateY(50%) rotateY(180deg);
-    }
+  &:hover,
+  &:focus {
+    transform: translateY(50%) rotateY(180deg);
+  }
 }
 
 .grid-item--position2 {
-    transform: translateY(10%) rotateY(0deg);
+  transform: translateY(10%) rotateY(0deg);
 
-    &:hover,
-    &:focus {
-        transform: translateY(10%) rotateY(180deg);
-    }
+  &:hover,
+  &:focus {
+    transform: translateY(10%) rotateY(180deg);
+  }
 }
 
 .grid-item--position3 {
-    transform: translateY(0%) rotateY(0deg);
+  transform: translateY(0%) rotateY(0deg);
 
-    &:hover,
-    &:focus {
-        transform: translateY(0%) rotateY(180deg);
-    }
+  &:hover,
+  &:focus {
+    transform: translateY(0%) rotateY(180deg);
+  }
 }
 
 .grid-item--position4 {
-    transform: translateY(25%) rotateY(0deg);
+  transform: translateY(25%) rotateY(0deg);
 
-    &:hover,
-    &:focus {
-        transform: translateY(25%) rotateY(180deg);
-    }
+  &:hover,
+  &:focus {
+    transform: translateY(25%) rotateY(180deg);
+  }
 }
 
 .grid-item--position5 {
-    transform: translateY(-5%) rotateY(0deg);
+  transform: translateY(-5%) rotateY(0deg);
 
-    &:hover,
-    &:focus {
-        transform: translateY(-5%) rotateY(180deg);
-    }
+  &:hover,
+  &:focus {
+    transform: translateY(-5%) rotateY(180deg);
+  }
 }
 
 .grid-item--position6 {
-    transform: translateY(5%) rotateY(0deg);
+  transform: translateY(5%) rotateY(0deg);
 
-    &:hover,
-    &:focus {
-        transform: translateY(55%) rotateY(180deg);
-    }
+  &:hover,
+  &:focus {
+    transform: translateY(55%) rotateY(180deg);
+  }
 }
 
 .grid-item--position7 {
-    transform: translateX(107%) translateY(-45%) rotateY(0deg);
+  transform: translateX(107%) translateY(-45%) rotateY(0deg);
 
-    &:hover,
-    &:focus {
-        transform: translateX(107%) translateY(-45%) rotateY(180deg);
-    }
+  &:hover,
+  &:focus {
+    transform: translateX(107%) translateY(-45%) rotateY(180deg);
+  }
 }
 
 .grid-item--position8 {
-    transform: translateX(107%) translateY(0%) rotateY(0deg);
+  transform: translateX(107%) translateY(0%) rotateY(0deg);
 
-    &:hover,
-    &:focus {
-        transform: translateX(107%) translateY(00%) rotateY(180deg);
-    }
+  &:hover,
+  &:focus {
+    transform: translateX(107%) translateY(00%) rotateY(180deg);
+  }
 }
 
 .grid-item--position9 {
-    transform: translateX(210%) translateY(-30%) rotateY(0deg);
+  transform: translateX(210%) translateY(-30%) rotateY(0deg);
 
-    &:hover,
-    &:focus {
-        transform: translateX(210%) translateY(-30%) rotateY(180deg);
-    }
+  &:hover,
+  &:focus {
+    transform: translateX(210%) translateY(-30%) rotateY(180deg);
+  }
 }
 
 .grid-item--position10 {
-    transform: translateX(208%) translateY(-60%) rotateY(0deg);
+  transform: translateX(208%) translateY(-60%) rotateY(0deg);
 
-    &:hover,
-    &:focus {
-        transform: translateX(208%) translateY(-60%) rotateY(180deg);
-    }
+  &:hover,
+  &:focus {
+    transform: translateX(208%) translateY(-60%) rotateY(180deg);
+  }
 }
 
 .grid-item--width2 {
-    flex-grow: 2;
+  flex-grow: 2;
 }
