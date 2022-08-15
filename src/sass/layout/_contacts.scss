@@ -199,6 +199,7 @@
   background-color: #fff;
   transform: translate(-50%, -50%) scale(1);
   overflow-y: auto;
+  z-index: 1000000;
 }
 
 .close-button {
@@ -251,6 +252,7 @@
   text-align: center;
   background-image: linear-gradient(to bottom, #fff 33%, #fff5f6 40%);
   overflow-y: auto;
+  z-index: 1000000;
 
   &__title {
     font-size: 18px;

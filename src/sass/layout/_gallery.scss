@@ -1,5 +1,11 @@
 .gallery {
-  background-image: linear-gradient(to bottom, #fff5f6 23%, #ffffff 23%);
+  background-image: linear-gradient(to bottom, #fff5f6 28%, #ffffff 23%);
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(to bottom, #fff5f6 53%, #ffffff 23%);
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(to bottom, #fff5f6 26%, #ffffff 23%);
+  }
 
   &__img {
     border-radius: 8px;
