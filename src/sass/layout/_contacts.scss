@@ -196,8 +196,8 @@
   top: 50%;
   left: 50%;
   z-index: 1000000;
-  height: 100vh;
-  max-height: auto;
+  height: 90vh;
+  max-height: 750px;
   padding-top: 20px;
   padding-bottom: 20px;
   max-width: 550px;
@@ -253,9 +253,9 @@
   left: 50%;
   z-index: 1000000;
   padding: 30px;
-  height: 100vh;
-  max-height: auto;
-  max-width: 450px;
+  height: 80vh;
+
+  max-width: 500px;
   width: calc(100% - 40px);
   background-color: white;
   transform: translate(-50%, -50%) scale(1);
@@ -263,7 +263,6 @@
   background-image: linear-gradient(to bottom, #fff 33%, #fff5f6 40%);
   overflow-y: auto;
   
-
   &__title {
     font-size: 18px;
     color: var(--accent-color);
