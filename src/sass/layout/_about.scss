@@ -192,22 +192,29 @@
   }
 
   &__title {
-    font-size: 18px;
+    font-size: 20px;
     color: var(--accent-color);
     margin-bottom: 12px;
   }
 
   &__inner {
-    padding: 30px;
+    padding: 35px;
+    @media screen and (min-width: 768px) {
+      padding: 50px;
+    }
   }
 
   &__text {
     margin-bottom: 15px;
 
+    font-size: 14px;
     font-weight: 500;
-    font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+    }
 
     &:last-child {
       margin-bottom: 0;
