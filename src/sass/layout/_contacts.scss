@@ -192,14 +192,19 @@
 }
 
 .modal-one {
-  height: calc(100% - 40px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1000000;
+  height: 100vh;
+  max-height: auto;
   padding-top: 20px;
+  padding-bottom: 20px;
   max-width: 550px;
   width: calc(100% - 40px);
   background-color: #fff;
   transform: translate(-50%, -50%) scale(1);
   overflow-y: auto;
-  z-index: 1000000;
 }
 
 .close-button {
@@ -243,8 +248,13 @@
 }
 
 .modal-two {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1000000;
   padding: 30px;
-  height: 90%;
+  height: 100vh;
+  max-height: auto;
   max-width: 450px;
   width: calc(100% - 40px);
   background-color: white;
@@ -252,7 +262,7 @@
   text-align: center;
   background-image: linear-gradient(to bottom, #fff 33%, #fff5f6 40%);
   overflow-y: auto;
-  z-index: 1000000;
+  
 
   &__title {
     font-size: 18px;
