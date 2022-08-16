@@ -1,153 +1,26 @@
 .hero {
+    position: relative;
+
+    width: 320px;
+    height: 502px;
+
+    margin-left: auto;
+    margin-right: auto;
+
     background-color: var(--hero-and-ice-cream-bg-color);
 
     overflow: hidden;
 
-    &__container {
-        position: relative;
-
-        padding-top: 136px;
-        padding-bottom: 158px;
-
-        @media screen and (min-width: 768px) {
-            padding-top: 20px;
-            padding-bottom: 16px;
-        }
-
-        @media screen and (min-width: 1200px) {
-            padding-top: 60px;
-            padding-bottom: 60px;
-        }
+    @media screen and (min-width: 768px) {
+        width: 768px;
+        height: 416px;
     }
 
-    &__ice-cream-thump {
-        position: absolute;
-
-        bottom: 0;
-        right: 32px;
-        
-        width: 171px;
-        height: 410px;
-
-        @media screen and (min-width: 768px) {
-            right: 303px;
-
-            width: 143px;
-            height: 336px;
-        }
-
-        @media screen and (min-width: 1200px) {
-            right: 328px;
-
-            width: 236px;
-            height: 557px;
-        }
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+        height: 664px;        
     }
 
-    &__circle {
-        position: absolute;
-
-        top: -9px;
-        left: -81px;
-        
-        width: 346px;
-        height: 344px;
-
-        border-radius: 50%;
-
-        background-color: var(--color-hero-elips-and-label-and-time);
-
-        content: '';
-
-        @media screen and (min-width: 768px) {
-            top: -37px;
-            left: -74px;
-
-            width: 335px;
-            height: 333px;
-        }
-
-        @media screen and (min-width: 1200px) {
-            top: -54px;
-            left: -119px;
-
-            width: 534px;
-            height: 534px;
-        }
-
-        &--small {
-            top: -2px;
-            left: 27px;
-            
-            width: 16px;
-            height: 16px;
-
-            background-color: var(--main-background-color);
-
-            @media screen and (min-width: 1200px) {
-                top: -4px;
-                left: 42px;
-                
-                width: 30px;
-                height: 30px;
-            }
-        }
-
-        &--small-on-trucks {
-            left: 39px;
-
-            @media screen and (min-width: 1200px) {
-                left: 62px;
-            }
-        }
-    }
-
-    &__img {
-        display: block;
-
-        width: 100%;
-        height: 100%;
-    }
-
-    &__ice-cream {
-        position: relative;
-    }
-
-    &__ice-baby {
-        display: none;
-
-        @media screen and (min-width: 768px) {
-            position: absolute;
-
-            bottom: 0;
-            right: 32px;
-
-            display: block;
-            
-            width: 190px;
-            height: 150px;
-        }
-
-        @media screen and (min-width: 1200px) {
-            right: 16px;
-            
-            width: 304px;
-            height: 241px;
-        }
-    }
-    
-    &__accent {
-        &--margin {
-            @media screen and (min-width: 768px) {
-                margin-bottom: 20px;
-            }
-
-            @media screen and (min-width: 1200px) {
-                margin-bottom: 40px;
-            }
-        }
-    }
-    
     &__title {
         width: 218px;
 
@@ -171,6 +44,25 @@
             letter-spacing: 0.04em;
         }
 
+        &--position {
+            position: absolute;
+
+            top: 194px;
+            left: 20px;
+
+            z-index: 1;
+
+            @media screen and (min-width: 768px) {
+                top: 102px;
+                left: 32px;
+            }
+
+            @media screen and (min-width: 1200px) {
+                top: 147px;
+                left: 16px;
+            }
+        }
+        
         &--red-text {
             font-size: 48px;
 
@@ -190,23 +82,27 @@
                 line-height: 0.905;
             }
         }
-
-        &--margin-bottom {
-            margin-bottom: 20px;
-
-            @media screen and (min-width: 1200px) {
-                margin-bottom: 24px;
-            }
-        }
     }
 
     &__action-buttons {
         display: flex;
-    }
 
-    &__title,
-    &__action-buttons {
-        position: relative;
+        position: absolute;
+
+        top: 320px;
+        left: 20px;
+
+        z-index: 1;
+
+        @media screen and (min-width: 768px) {
+            top: 202px;
+            left: 32px; 
+        }
+
+        @media screen and (min-width: 1200px) {
+            top: 308px;
+            left: 16px;
+        }
     }
 
     &__button {
@@ -265,13 +161,28 @@
     &__advantages-thumb {
         display: none;
 
-        position: relative;
+        position: absolute;
+
+        z-index: 1;
 
         @media screen and (min-width: 768px) {
-            position: relative;
+            bottom: 16px;
+            left: 32px;
 
             display: flex;
         }
+
+        @media screen and (min-width: 1200px) {
+            bottom: 60px;
+            left: 16px;
+        }
+    }
+
+    &__img {
+        display: block;
+
+        width: 100%;
+        height: 100%;
     }
 
     &__milk {
@@ -364,27 +275,113 @@
         }
     }
 
+    &__ice-cream-thump {
+        position: absolute;
+
+        bottom: 0;
+        right: 32px;
+        
+        width: 171px;
+        height: 410px;
+
+        @media screen and (min-width: 768px) {
+            right: 303px;
+
+            width: 143px;
+            height: 336px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            right: 328px;
+
+            width: 236px;
+            height: 557px;
+        }
+    }
+
+    &__circle {
+        position: absolute;
+
+        top: -9px;
+        left: -81px;
+        
+        width: 346px;
+        height: 344px;
+
+        border-radius: 50%;
+
+        background-color: var(--color-hero-elips-and-label-and-time);
+
+        content: '';
+
+        @media screen and (min-width: 768px) {
+            top: -37px;
+            left: -74px;
+
+            width: 335px;
+            height: 333px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            top: -54px;
+            left: -119px;
+
+            width: 534px;
+            height: 534px;
+        }
+
+        &--small {
+            top: -2px;
+            left: 27px;
+            
+            width: 16px;
+            height: 16px;
+
+            background-color: var(--main-background-color);
+
+            @media screen and (min-width: 1200px) {
+                top: -4px;
+                left: 42px;
+                
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        &--small-on-trucks {
+            left: 39px;
+
+            @media screen and (min-width: 1200px) {
+                left: 62px;
+            }
+        }
+    }
+
+    &__ice-cream {
+        position: relative;
+    }
+
     &__outlet-thumb {
         display: none;
 
         position: absolute;
 
         &--cafe {
-            top: 18px;
+            top: 94px;
             right: 42px;
 
             @media screen and (min-width: 1200px) {
-                top: 72px;
+                top: 156px;
                 right: 34px;
             }
         }
 
         &--truck {
-            top: 77px;
+            top: 153px;
             right: 42px;
 
             @media screen and (min-width: 1200px) {
-                top: 160px;
+                top: 247px;
                 right: 34px;
             }
         }
@@ -425,6 +422,29 @@
         @media screen and (min-width: 1200px) {
             font-size: 14px;
             letter-spacing: 0.01em;
+        }
+    }
+    
+    &__ice-baby {
+        display: none;
+
+        @media screen and (min-width: 768px) {
+            position: absolute;
+
+            bottom: 0;
+            right: 32px;
+
+            display: block;
+            
+            width: 190px;
+            height: 150px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            right: 16px;
+            
+            width: 304px;
+            height: 241px;
         }
     }
 } 
