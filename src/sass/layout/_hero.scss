@@ -1,452 +1,452 @@
 .hero {
-    background-color: var(--hero-and-ice-cream-bg-color);
+  background-color: var(--hero-and-ice-cream-bg-color);
 
-    &__container {
-        position: relative;
+  overflow: hidden;
 
-        width: 320px;
-        height: 502px;
+  &__container {
+    position: relative;
 
-        margin-left: auto;
-        margin-right: auto;
+    width: 320px;
+    height: 502px;
 
-        overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
 
-        @media screen and (min-width: 768px) {
-            width: 768px;
-            height: 416px;
-        }
-
-        @media screen and (min-width: 1200px) {
-            width: 1200px;
-            height: 664px;        
-        }
+    @media screen and (min-width: 768px) {
+      width: 768px;
+      height: 416px;
     }
 
-    &__title {
-        width: 218px;
+    @media screen and (min-width: 1200px) {
+      width: 1200px;
+      height: 664px;
+    }
+  }
 
-        font-size: 26px;
+  &__title {
+    width: 218px;
 
-        text-align: left;
+    font-size: 26px;
 
-        color: var(--text-color-white);
+    text-align: left;
 
-        @media screen and (min-width: 768px) {
-            width: 162px;
+    color: var(--text-color-white);
 
-            font-size: 22px;
-        }
+    @media screen and (min-width: 768px) {
+      width: 162px;
 
-        @media screen and (min-width: 1200px) {
-            width: 277px;
-
-            font-size: 38px;
-            line-height: 1.158;
-            letter-spacing: 0.04em;
-        }
-
-        &--position {
-            position: absolute;
-
-            top: 194px;
-            left: 20px;
-
-            z-index: 1;
-
-            @media screen and (min-width: 768px) {
-                top: 102px;
-                left: 32px;
-            }
-
-            @media screen and (min-width: 1200px) {
-                top: 147px;
-                left: 16px;
-            }
-        }
-        
-        &--red-text {
-            font-size: 48px;
-
-            line-height: 0.965;
-
-            color: var(--accent-color);
-
-            @media screen and (min-width: 768px) {
-                font-size: 34px;
-
-                line-height: 0.905;
-            }
-
-            @media screen and (min-width: 1200px) {
-                font-size: 58px;
-
-                line-height: 0.905;
-            }
-        }
+      font-size: 22px;
     }
 
-    &__action-buttons {
-        display: flex;
+    @media screen and (min-width: 1200px) {
+      width: 277px;
 
-        position: absolute;
-
-        top: 320px;
-        left: 20px;
-
-        z-index: 1;
-
-        @media screen and (min-width: 768px) {
-            top: 202px;
-            left: 32px; 
-        }
-
-        @media screen and (min-width: 1200px) {
-            top: 308px;
-            left: 16px;
-        }
+      font-size: 38px;
+      line-height: 1.158;
+      letter-spacing: 0.04em;
     }
 
-    &__button {
-        padding-top: 6px;
-        padding-bottom: 6px;
-        padding-left: 8px;
-        padding-right: 8px;
+    &--position {
+      position: absolute;
 
-        min-width: 62px;
-        min-height: 24px;
+      top: 194px;
+      left: 20px;
 
-        border-radius: 20px;
-        
-        font-weight: 400;
-        font-size: 8px;
-        line-height: 1.25;
+      z-index: 1;
 
-        @media screen and (min-width: 1200px) {
-            padding-top: 11px;
-            padding-bottom: 11px;
-            padding-left: 19px;
-            padding-right: 19px;
+      @media screen and (min-width: 768px) {
+        top: 102px;
+        left: 32px;
+      }
 
-            font-size: 14px;
-            letter-spacing: 0.04;
-        }
-        
-        &--product {
-            padding-left: 10px;
-            padding-right: 10px;
-
-            background-color: var(--accent-color);
-            
-            color: var(--text-color-white);
-
-            @media screen and (min-width: 1200px) {
-                padding-left: 23px;
-                padding-right: 23px;
-            }
-
-            &:hover,
-            &:focus {
-                background-color: var(--footer-bg-color-button-hover);
-            }
-        }
-
-        &--margin:not(:last-child) {
-            margin-right: 8px;
-
-            @media screen and (min-width: 1200px) {
-                margin-right: 12px;
-            }
-        }
+      @media screen and (min-width: 1200px) {
+        top: 147px;
+        left: 16px;
+      }
     }
 
-    &__advantages-thumb {
-        display: none;
+    &--red-text {
+      font-size: 48px;
 
-        position: absolute;
+      line-height: 0.965;
 
-        z-index: 1;
+      color: var(--accent-color);
 
-        @media screen and (min-width: 768px) {
-            bottom: 16px;
-            left: 32px;
+      @media screen and (min-width: 768px) {
+        font-size: 34px;
 
-            display: flex;
-        }
+        line-height: 0.905;
+      }
 
-        @media screen and (min-width: 1200px) {
-            bottom: 60px;
-            left: 16px;
-        }
+      @media screen and (min-width: 1200px) {
+        font-size: 58px;
+
+        line-height: 0.905;
+      }
+    }
+  }
+
+  &__action-buttons {
+    display: flex;
+
+    position: absolute;
+
+    top: 320px;
+    left: 20px;
+
+    z-index: 1;
+
+    @media screen and (min-width: 768px) {
+      top: 202px;
+      left: 32px;
     }
 
-    &__img {
-        display: block;
+    @media screen and (min-width: 1200px) {
+      top: 308px;
+      left: 16px;
+    }
+  }
 
-        width: 100%;
-        height: 100%;
+  &__button {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 8px;
+    padding-right: 8px;
+
+    min-width: 62px;
+    min-height: 24px;
+
+    border-radius: 20px;
+
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 11px;
+      padding-bottom: 11px;
+      padding-left: 19px;
+      padding-right: 19px;
+
+      font-size: 14px;
+      letter-spacing: 0.04;
     }
 
-    &__milk {
-        width: 152px;
-        height: 154px;
+    &--product {
+      padding-left: 10px;
+      padding-right: 10px;
 
-        @media screen and (min-width: 1200px) {
-            width: 213px;
-            height: 216px;
-        }
+      background-color: var(--accent-color);
+
+      color: var(--text-color-white);
+
+      @media screen and (min-width: 1200px) {
+        padding-left: 23px;
+        padding-right: 23px;
+      }
+
+      &:hover,
+      &:focus {
+        background-color: var(--footer-bg-color-button-hover);
+      }
     }
 
-    &__advantages {
-        padding-top: 41px;
+    &--margin:not(:last-child) {
+      margin-right: 8px;
 
-        width: 114px;
+      @media screen and (min-width: 1200px) {
+        margin-right: 12px;
+      }
+    }
+  }
 
-        @media screen and (min-width: 1200px) {
-            padding-top: 68px;
+  &__advantages-thumb {
+    display: none;
 
-            width: 200px;
-        }
+    position: absolute;
+
+    z-index: 1;
+
+    @media screen and (min-width: 768px) {
+      bottom: 16px;
+      left: 32px;
+
+      display: flex;
     }
 
-    &__main-idea {
-        font-size: 8px;
-        line-height: 1.5;
-        letter-spacing: 0.001em;
+    @media screen and (min-width: 1200px) {
+      bottom: 60px;
+      left: 16px;
+    }
+  }
 
-        color: var(--text-color-white);
+  &__img {
+    display: block;
 
-        @media screen and (min-width: 1200px) {
-            font-size: 14px;
-            line-height: 1.4;
-            letter-spacing: 0.04;
-        }
+    width: 100%;
+    height: 100%;
+  }
 
-        &--margin {
-            margin-bottom: 7px;
+  &__milk {
+    width: 152px;
+    height: 154px;
 
-            @media screen and (min-width: 1200px) {
-                margin-bottom: 20px;
-            }
-        }
+    @media screen and (min-width: 1200px) {
+      width: 213px;
+      height: 216px;
+    }
+  }
+
+  &__advantages {
+    padding-top: 41px;
+
+    width: 114px;
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 68px;
+
+      width: 200px;
+    }
+  }
+
+  &__main-idea {
+    font-size: 8px;
+    line-height: 1.5;
+    letter-spacing: 0.001em;
+
+    color: var(--text-color-white);
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.4;
+      letter-spacing: 0.04;
     }
 
-    &__arrow {
-        width: 18px;
-        height: 18px;
+    &--margin {
+      margin-bottom: 7px;
 
-        cursor: pointer;
+      @media screen and (min-width: 1200px) {
+        margin-bottom: 20px;
+      }
+    }
+  }
 
-        transform: rotate(0deg);
+  &__arrow {
+    width: 18px;
+    height: 18px;
 
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
 
-        &:hover,
-        &:focus {
-            transform: rotate(90deg);
-        }
+    transform: rotate(0deg);
 
-        @media screen and (min-width: 1200px) {
-            width: 26px;
-            height: 26px;
-        }
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      transform: rotate(90deg);
     }
 
-    &__benefit {
-        display: none;
+    @media screen and (min-width: 1200px) {
+      width: 26px;
+      height: 26px;
+    }
+  }
 
-        position: absolute;
+  &__benefit {
+    display: none;
 
-        width: 114px;
+    position: absolute;
 
-        @media screen and (min-width: 1200px) {
-            width: 200px;
-        }
+    width: 114px;
 
-        .hero__arrow:hover ~ &,
-        .hero__arrow:focus ~ & {
-            display: block;
-        }
-
-        &--margin {
-            margin-top: 7px;
-
-            @media screen and (min-width: 1200px) {
-                margin-bottom: 20px;
-            }
-        }
+    @media screen and (min-width: 1200px) {
+      width: 200px;
     }
 
-    &__ice-cream-thump {
-        position: absolute;
-
-        bottom: 0;
-        right: 32px;
-        
-        width: 171px;
-        height: 410px;
-
-        @media screen and (min-width: 768px) {
-            right: 303px;
-
-            width: 143px;
-            height: 336px;
-        }
-
-        @media screen and (min-width: 1200px) {
-            right: 328px;
-
-            width: 236px;
-            height: 557px;
-        }
+    .hero__arrow:hover ~ &,
+    .hero__arrow:focus ~ & {
+      display: block;
     }
 
-    &__circle {
-        position: absolute;
+    &--margin {
+      margin-top: 7px;
 
-        top: -9px;
-        left: -81px;
-        
-        width: 346px;
-        height: 344px;
+      @media screen and (min-width: 1200px) {
+        margin-bottom: 20px;
+      }
+    }
+  }
 
-        border-radius: 50%;
+  &__ice-cream-thump {
+    position: absolute;
 
-        background-color: var(--color-hero-elips-and-label-and-time);
+    bottom: 0;
+    right: 32px;
 
-        content: '';
+    width: 171px;
+    height: 410px;
 
-        @media screen and (min-width: 768px) {
-            top: -37px;
-            left: -74px;
+    @media screen and (min-width: 768px) {
+      right: 303px;
 
-            width: 335px;
-            height: 333px;
-        }
-
-        @media screen and (min-width: 1200px) {
-            top: -54px;
-            left: -119px;
-
-            width: 534px;
-            height: 534px;
-        }
-
-        &--small {
-            top: -2px;
-            left: 27px;
-            
-            width: 16px;
-            height: 16px;
-
-            background-color: var(--main-background-color);
-
-            @media screen and (min-width: 1200px) {
-                top: -4px;
-                left: 42px;
-                
-                width: 30px;
-                height: 30px;
-            }
-        }
-
-        &--small-on-trucks {
-            left: 39px;
-
-            @media screen and (min-width: 1200px) {
-                left: 62px;
-            }
-        }
+      width: 143px;
+      height: 336px;
     }
 
-    &__ice-cream {
-        position: relative;
+    @media screen and (min-width: 1200px) {
+      right: 328px;
+
+      width: 236px;
+      height: 557px;
+    }
+  }
+
+  &__circle {
+    position: absolute;
+
+    top: -9px;
+    left: -81px;
+
+    width: 346px;
+    height: 344px;
+
+    border-radius: 50%;
+
+    background-color: var(--color-hero-elips-and-label-and-time);
+
+    content: '';
+
+    @media screen and (min-width: 768px) {
+      top: -37px;
+      left: -74px;
+
+      width: 335px;
+      height: 333px;
     }
 
-    &__outlet-thumb {
-        display: none;
+    @media screen and (min-width: 1200px) {
+      top: -54px;
+      left: -119px;
 
-        position: absolute;
-
-        &--cafe {
-            top: 94px;
-            right: 42px;
-
-            @media screen and (min-width: 1200px) {
-                top: 156px;
-                right: 34px;
-            }
-        }
-
-        &--truck {
-            top: 153px;
-            right: 42px;
-
-            @media screen and (min-width: 1200px) {
-                top: 247px;
-                right: 34px;
-            }
-        }
-
-        @media screen and (min-width: 768px) {            
-            display: block;
-        }
+      width: 534px;
+      height: 534px;
     }
 
-    &__outlet-amount {
-        position: relative;
+    &--small {
+      top: -2px;
+      left: 27px;
 
-        text-align: right;
+      width: 16px;
+      height: 16px;
 
-        font-size: 28px;
+      background-color: var(--main-background-color);
 
-        @media screen and (min-width: 1200px) {
-            font-size: 46px;
-            line-height: 1.152;
-            letter-spacing: 0.04;
-        }
+      @media screen and (min-width: 1200px) {
+        top: -4px;
+        left: 42px;
 
-        &--margin {
-            @media screen and (min-width: 1200px) {
-                margin-bottom: 2px;
-            }
-        }
+        width: 30px;
+        height: 30px;
+      }
     }
 
-    &__outlet {
-        font-size: 8px;
-        line-height: 1.25;
+    &--small-on-trucks {
+      left: 39px;
 
-        text-align: right;
-        
-        color: var(--text-color-white);
-
-        @media screen and (min-width: 1200px) {
-            font-size: 14px;
-            letter-spacing: 0.01em;
-        }
+      @media screen and (min-width: 1200px) {
+        left: 62px;
+      }
     }
-    
-    &__ice-baby {
-        display: none;
+  }
 
-        @media screen and (min-width: 768px) {
-            position: absolute;
+  &__ice-cream {
+    position: relative;
+  }
 
-            bottom: 0;
-            right: 32px;
+  &__outlet-thumb {
+    display: none;
 
-            display: block;
-            
-            width: 190px;
-            height: 150px;
-        }
+    position: absolute;
 
-        @media screen and (min-width: 1200px) {
-            right: 16px;
-            
-            width: 304px;
-            height: 241px;
-        }
+    &--cafe {
+      top: 94px;
+      right: 42px;
+
+      @media screen and (min-width: 1200px) {
+        top: 156px;
+        right: 34px;
+      }
     }
-} 
+
+    &--truck {
+      top: 153px;
+      right: 42px;
+
+      @media screen and (min-width: 1200px) {
+        top: 247px;
+        right: 34px;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
+  }
+
+  &__outlet-amount {
+    position: relative;
+
+    text-align: right;
+
+    font-size: 28px;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 46px;
+      line-height: 1.152;
+      letter-spacing: 0.04;
+    }
+
+    &--margin {
+      @media screen and (min-width: 1200px) {
+        margin-bottom: 2px;
+      }
+    }
+  }
+
+  &__outlet {
+    font-size: 8px;
+    line-height: 1.25;
+
+    text-align: right;
+
+    color: var(--text-color-white);
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      letter-spacing: 0.01em;
+    }
+  }
+
+  &__ice-baby {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      position: absolute;
+
+      bottom: 0;
+      right: 32px;
+
+      display: block;
+
+      width: 190px;
+      height: 150px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      right: 16px;
+
+      width: 304px;
+      height: 241px;
+    }
+  }
+}
