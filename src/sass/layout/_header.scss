@@ -1,8 +1,9 @@
 .page-header {
   padding-top: 8px;
   // background-color: var(--hero-and-ice-cream-bg-color);
-  position: relative;
-  z-index: 1;
+  position: absolute;
+  top: 0;
+  z-index: 2;
 
   @media screen and (min-width: 768px) {
     padding-top: 32px;

@@ -1,286 +1,212 @@
 <section id="hero" class="hero">
-  <h2 class="visually-hidden">title</h2>
-  <header class="page-header">
-    <div class="container page-header__inner">
-      <!-- add logo -->
-      <a
-        href="./index.html"
-        class="page-header__icon logo page-header__logo animate__animated"
+  <div class="hero__container">
+    <h1
+        class="title hero__title hero__title--position animate__animated animate__fadeInTopLeft"
       >
-        <svg width="199" height="50">
-          <use href="./images/Sprite/icons.svg#icon-icecream"></use>
-        </svg>
-      </a>
+        Ice cream made with
+        <span class="hero__title hero__title--red-text">passion</span>
+    </h1>
 
-      <!-- add desktop-menu -->
-      <div class="page-header__desktop-menu">
-        <nav>
-          <ul class="site-nav">
-            <li class="site-nav__item">
-              <a href="#hero" class="link site-nav__link">Home</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="#advantages" class="link site-nav__link">About us</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="#about" class="link site-nav__link">How it's made?</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="#products" class="link site-nav__link">Our products</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="#contacts" class="link site-nav__link">Contact</a>
-            </li>
-          </ul>
-        </nav>
-        <button class="button page-header__button" data-modal-open>
-          Buy now
-          <svg
-            width="8"
-            height="9"
-            class="icon button__icon button__icon--right"
-          >
-            <use href="./images/Sprite/icons.svg#icon-vector-right"></use>
+    <header class="page-header">
+      <div class="container page-header__inner">
+        <!-- add logo -->
+        <a
+          href="./index.html"
+          class="page-header__icon logo page-header__logo animate__animated"
+        >
+          <svg width="199" height="50">
+            <use href="./images/Sprite/icons.svg#icon-icecream"></use>
           </svg>
-        </button>
-      </div>
+        </a>
 
-      <!-- add tablet button -->
-      <button class="button page-header__tablet-button" data-modal-open-tablet>
-        Buy now
-        <svg width="8" height="9" class="icon button__icon button__icon--right">
-          <use href="./images/Sprite/icons.svg#icon-vector-right"></use>
-        </svg>
-      </button>
-
-      <button
-        class="page-header__open-menu"
-        type="button"
-        aria-label="Open site menu"
-        data-mobile-menu-open
-      >
-        <svg width="20" height="14">
-          <use href="./images/Sprite/icons.svg#icon-head-burger"></use>
-        </svg>
-      </button>
-
-      <div data-mobile-menu class="mobile-menu is-hidden">
-        <div class="mobile-menu__div">
-          <button
-            class="page-header__icon mobile-menu__close-menu"
-            type="button"
-            aria-label="Close site menu"
-            data-mobile-menu-close
-          >
-            <svg class="icon" width="14" height="14">
-              <use href="./images/Sprite/icons.svg#icon-head-close"></use>
-            </svg>
-          </button>
-          <button class="button mobile-menu__button" data-modal-open-mobile>
+        <!-- add desktop-menu -->
+        <div class="page-header__desktop-menu">
+          <nav>
+            <ul class="site-nav">
+              <li class="site-nav__item">
+                <a href="#hero" class="link site-nav__link">Home</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="#advantages" class="link site-nav__link">About us</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="#about" class="link site-nav__link">How it's made?</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="#products" class="link site-nav__link">Our products</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="#contacts" class="link site-nav__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="button page-header__button" data-modal-open>
             Buy now
             <svg
-              width="6"
-              height="8"
+              width="8"
+              height="9"
               class="icon button__icon button__icon--right"
             >
               <use href="./images/Sprite/icons.svg#icon-vector-right"></use>
             </svg>
           </button>
         </div>
-        <nav>
-          <ul class="site-nav">
-            <li class="site-nav__item">
-              <a href="#hero" class="link site-nav__link">Home</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="#advantages" class="link site-nav__link">About us</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="#about" class="link site-nav__link">How it's made?</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="#products" class="link site-nav__link">Our products</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="#contacts" class="link site-nav__link">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal-header">
-        <button
-          type="button"
-          class="modal-header__close-button"
-          data-modal-close
-        >
-          <svg width="18" height="18" class="icon">
-            <use href="./images/Sprite/icons.svg#icon-close-button"></use>
+
+        <!-- add tablet button -->
+        <button class="button page-header__tablet-button" data-modal-open-tablet>
+          Buy now
+          <svg width="8" height="9" class="icon button__icon button__icon--right">
+            <use href="./images/Sprite/icons.svg#icon-vector-right"></use>
           </svg>
         </button>
-        <div class="modal-header__inner">
-          <h2 class="title modal-header__title">
-            Leave your details, we will call you back
-          </h2>
-          <form name="form-modal" class="form">
-            <div class="form-group">
-              <label class="form-group__label" for="username">Name</label>
-              <div class="form-group__input-inner">
-                <input
-                  class="form-group__input"
-                  type="text"
-                  name="username"
-                  id="username"
-                />
-                <svg width="18" height="18" class="icon form-group__icon">
-                  <use href="./images/Sprite/icons.svg#icon-person-black"></use>
-                </svg>
-              </div>
-            </div>
 
-            <div class="form-group">
-              <label class="form-group__label" for="tel">Phone</label>
-              <div class="form-group__input-inner">
-                <input
-                  class="form-group__input"
-                  type="tel"
-                  name="tel"
-                  id="tel"
-                />
-                <svg width="18" height="18" class="icon form-group__icon">
-                  <use href="./images/Sprite/icons.svg#icon-phone-black"></use>
-                </svg>
-              </div>
-            </div>
+        <button
+          class="page-header__open-menu"
+          type="button"
+          aria-label="Open site menu"
+          data-mobile-menu-open
+        >
+          <svg width="20" height="14">
+            <use href="./images/Sprite/icons.svg#icon-head-burger"></use>
+          </svg>
+        </button>
 
-            <div class="form-group">
-              <label class="form-group__label" for="mail">Mail</label>
-              <div class="form-group__input-inner">
-                <input
-                  class="form-group__input"
-                  type="email"
-                  name="mail"
-                  id="mail"
-                />
-                <svg width="18" height="18" class="icon form-group__icon">
-                  <use href="./images/Sprite/icons.svg#icon-email-black"></use>
-                </svg>
-              </div>
-            </div>
-
-            <div class="form-group-textarea">
-              <label class="form-group__label" for="comment">Comment</label>
-              <textarea
-                class="form-group-textarea__textarea"
-                name="comment"
-                id="comment"
-                placeholder="Enter text"
-              ></textarea>
-            </div>
-
-            <label class="form__label-checkbox">
-              <input
-                class="form__input-checkbox"
-                type="checkbox"
-                name="agreement"
-              />
-              <span class="form__icon-checked"></span>
-              I agree with the newsletter and accept
-              <a href="" class="form__link">Terms of an agreement</a>
-            </label>
-            <div class="form__submit">
-              <button type="submit" class="button form__button">Send</button>
-            </div>
-          </form>
+        <div data-mobile-menu class="mobile-menu is-hidden">
+          <div class="mobile-menu__div">
+            <button
+              class="page-header__icon mobile-menu__close-menu"
+              type="button"
+              aria-label="Close site menu"
+              data-mobile-menu-close
+            >
+              <svg class="icon" width="14" height="14">
+                <use href="./images/Sprite/icons.svg#icon-head-close"></use>
+              </svg>
+            </button>
+            <button class="button mobile-menu__button" data-modal-open-mobile>
+              Buy now
+              <svg
+                width="6"
+                height="8"
+                class="icon button__icon button__icon--right"
+              >
+                <use href="./images/Sprite/icons.svg#icon-vector-right"></use>
+              </svg>
+            </button>
+          </div>
+          <nav>
+            <ul class="site-nav">
+              <li class="site-nav__item">
+                <a href="#hero" class="link site-nav__link">Home</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="#advantages" class="link site-nav__link">About us</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="#about" class="link site-nav__link">How it's made?</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="#products" class="link site-nav__link">Our products</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="#contacts" class="link site-nav__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
-    </div>
-  </header>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal-header">
+          <button
+            type="button"
+            class="modal-header__close-button"
+            data-modal-close
+          >
+            <svg width="18" height="18" class="icon">
+              <use href="./images/Sprite/icons.svg#icon-close-button"></use>
+            </svg>
+          </button>
+          <div class="modal-header__inner">
+            <h2 class="title modal-header__title">
+              Leave your details, we will call you back
+            </h2>
+            <form name="form-modal" class="form">
+              <div class="form-group">
+                <label class="form-group__label" for="username">Name</label>
+                <div class="form-group__input-inner">
+                  <input
+                    class="form-group__input"
+                    type="text"
+                    name="username"
+                    id="username"
+                  />
+                  <svg width="18" height="18" class="icon form-group__icon">
+                    <use href="./images/Sprite/icons.svg#icon-person-black"></use>
+                  </svg>
+                </div>
+              </div>
 
-  <div class="container hero__container">
-    <!-- Мороженное -->
-    <div class="hero__ice-cream-thump">
-      <div
-        class="hero__circle animate__animated animate__zoomIn animate__delay-1s"
-      ></div>
-      <picture
-        class="hero__img hero__ice-cream animate__animated animate__fadeInDown"
-      >
-        <source
-          srcset="
-            ./images/hero/ice1200@2x.webp 2x,
-            ./images/hero/ice1200.webp    1x
-          "
-          media="(min-width: 1200px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./images/hero/ice768@2x.webp 2x, ./images/hero/ice768.webp 1x"
-          media="(min-width: 768px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./images/hero/ice320@2x.webp 2x, ./images/hero/ice320.webp 1x"
-          media="(max-width: 767px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./images/hero/ice1200@2x.png 2x, ./images/hero/ice1200.png 1x"
-          media="(min-width: 1200px)"
-          type="image/png"
-        />
-        <source
-          srcset="./images/hero/ice768@2x.png 2x, ./images/hero/ice768.png 1x"
-          media="(min-width: 768px)"
-          type="image/png"
-        />
-        <source
-          srcset="./images/hero/ice320@2x.png 2x, ./images/hero/ice320.png 1x"
-          media="(max-width: 767px)"
-          type="image/png"
-        />
-        <img src="./images/hero/ice320.png" alt="Best ice cream" />
-      </picture>
-    </div>
+              <div class="form-group">
+                <label class="form-group__label" for="tel">Phone</label>
+                <div class="form-group__input-inner">
+                  <input
+                    class="form-group__input"
+                    type="tel"
+                    name="tel"
+                    id="tel"
+                  />
+                  <svg width="18" height="18" class="icon form-group__icon">
+                    <use href="./images/Sprite/icons.svg#icon-phone-black"></use>
+                  </svg>
+                </div>
+              </div>
 
-    <!-- Девушка -->
-    <picture class="hero__ice-baby animate__animated animate__fadeInRight">
-      <source
-        srcset="
-          ./images/hero/girl1200@2x.webp 2x,
-          ./images/hero/girl1200.webp    1x
-        "
-        media="(min-width: 1200px)"
-        type="image/webp"
-      />
-      <source
-        srcset="./images/hero/girl768@2x.webp 2x, ./images/hero/girl768.webp 1x"
-        media="(min-width: 768px)"
-        type="image/webp"
-      />
-      <source
-        srcset="./images/hero/girl1200@2x.png 2x, ./images/hero/girl1200.png 1x"
-        media="(min-width: 1200px)"
-        type="image/png"
-      />
-      <source
-        srcset="./images/hero/girl768@2x.png 2x, ./images/hero/girl768.png 1x"
-        media="(min-width: 768px)"
-        type="image/png"
-      />
-      <img src="./images/hero/girl768.png" alt="Best ingredients" />
-    </picture>
+              <div class="form-group">
+                <label class="form-group__label" for="mail">Mail</label>
+                <div class="form-group__input-inner">
+                  <input
+                    class="form-group__input"
+                    type="email"
+                    name="mail"
+                    id="mail"
+                  />
+                  <svg width="18" height="18" class="icon form-group__icon">
+                    <use href="./images/Sprite/icons.svg#icon-email-black"></use>
+                  </svg>
+                </div>
+              </div>
 
-    <!-- Заглавие страницы + блок кнопок -->
-    <div class="hero__accent hero__accent--margin">
-      <h1
-        class="title hero__title hero__title--margin-bottom animate__animated animate__fadeInTopLeft"
-      >
-        Ice cream made with
-        <span class="hero__title hero__title--red-text">passion</span>
-      </h1>
-      <div
+              <div class="form-group-textarea">
+                <label class="form-group__label" for="comment">Comment</label>
+                <textarea
+                  class="form-group-textarea__textarea"
+                  name="comment"
+                  id="comment"
+                  placeholder="Enter text"
+                ></textarea>
+              </div>
+
+              <label class="form__label-checkbox">
+                <input
+                  class="form__input-checkbox"
+                  type="checkbox"
+                  name="agreement"
+                />
+                <span class="form__icon-checked"></span>
+                I agree with the newsletter and accept
+                <a href="" class="form__link">Terms of an agreement</a>
+              </label>
+              <div class="form__submit">
+                <button type="submit" class="button form__button">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Блок кнопок -->
+    <div
         class="hero__action-buttons animate__animated animate__zoomIn animate__delay-1s"
       >
         <a
@@ -291,7 +217,6 @@
         <a href="#about" class="button hero__button hero__button--margin"
           >How it's made?</a
         >
-      </div>
     </div>
 
     <!-- Молоко + блок текста -->
@@ -386,6 +311,51 @@
       </div>
     </div>
 
+    <!-- Мороженное -->
+    <div class="hero__ice-cream-thump">
+      <div
+        class="hero__circle animate__animated animate__zoomIn animate__delay-1s"
+      ></div>
+      <picture
+        class="hero__img hero__ice-cream animate__animated animate__fadeInDown"
+      >
+        <source
+          srcset="
+            ./images/hero/ice1200@2x.webp 2x,
+            ./images/hero/ice1200.webp    1x
+          "
+          media="(min-width: 1200px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/hero/ice768@2x.webp 2x, ./images/hero/ice768.webp 1x"
+          media="(min-width: 768px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/hero/ice320@2x.webp 2x, ./images/hero/ice320.webp 1x"
+          media="(max-width: 767px)"
+          type="image/webp"
+        />
+        <source
+          srcset="./images/hero/ice1200@2x.png 2x, ./images/hero/ice1200.png 1x"
+          media="(min-width: 1200px)"
+          type="image/png"
+        />
+        <source
+          srcset="./images/hero/ice768@2x.png 2x, ./images/hero/ice768.png 1x"
+          media="(min-width: 768px)"
+          type="image/png"
+        />
+        <source
+          srcset="./images/hero/ice320@2x.png 2x, ./images/hero/ice320.png 1x"
+          media="(max-width: 767px)"
+          type="image/png"
+        />
+        <img src="./images/hero/ice320.png" alt="Best ice cream" />
+      </picture>
+    </div>
+
     <!-- Счетчик магазинов -->
     <div
       class="hero__outlet-thumb hero__outlet-thumb--cafe animate__animated animate__fadeInTopRight"
@@ -405,5 +375,33 @@
       <h2 class="title hero__outlet-amount hero__outlet-amount--margin">23</h2>
       <p class="hero__outlet">food trucks</p>
     </div>
+
+    <!-- Девушка -->
+    <picture class="hero__ice-baby animate__animated animate__fadeInRight">
+      <source
+        srcset="
+          ./images/hero/girl1200@2x.webp 2x,
+          ./images/hero/girl1200.webp    1x
+        "
+        media="(min-width: 1200px)"
+        type="image/webp"
+      />
+      <source
+        srcset="./images/hero/girl768@2x.webp 2x, ./images/hero/girl768.webp 1x"
+        media="(min-width: 768px)"
+        type="image/webp"
+      />
+      <source
+        srcset="./images/hero/girl1200@2x.png 2x, ./images/hero/girl1200.png 1x"
+        media="(min-width: 1200px)"
+        type="image/png"
+      />
+      <source
+        srcset="./images/hero/girl768@2x.png 2x, ./images/hero/girl768.png 1x"
+        media="(min-width: 768px)"
+        type="image/png"
+      />
+      <img src="./images/hero/girl768.png" alt="Best ingredients" />
+    </picture>
   </div>
 </section>
